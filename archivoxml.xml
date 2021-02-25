@@ -1,575 +1,2085 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<!--
-/**
- ***************************************************************************
- *
- *  Author Code: DiegoPino, diegopino@gmail.com
- *  Basado en mis estudios de XML Schemas Database and XSL stands for EXtensible Stylesheet Language
- *  Website: http://diegopino.blogspot.com/
- *  License: Creative Commons http://creativecommons.org/licenses/by/4.0/legalcode
- *
- *  XML Database League standings to generate stats from a XML League to Page. for example: -FIFA World Cup,
- *  Football Clubs / Leagues and Tournaments
- *
- ***************************************************************************​/
- */
--->
-
-
-
-<?xml-stylesheet type="text/xsl" href="XSLTLeague.xsl" ?>
-
-
-
-
-<League>
-
-<Team id="Arsenal">
-
-   <image>
-   <src>images/arsenal.png</src>
-   <title>Arsenal FC</title>
-   </image>
-   <Team_Name>Arsenal FC</Team_Name>
-   <description>El Arsenal fue fundado en 1886 en Woolwich, en el sudeste de Londres. En 1893, se convirtió en el primer club del sur de Inglaterra en unirse a la Football League. En 1913 se mudaron a la parte norte de la ciudad hacia Highbury con sede en el Arsenal Stadium. En 2006 dejaron Highbury para jugar sus partidos de local en el nuevo Emirates Stadium, en Islington. uno de los equipos con más trofeos ganados del fútbol inglés. Ha ganado 13 títulos de Primera División y 11 Copas de Inglaterra. Es el único conjunto inglés que consiguió ganar la Premier League de manera invicta (temporada 2003/04).</description>
-   <City>Londres </City>
-   <Stadium>Emirates Stadium </Stadium>
-   
-   <Players>
-      <person>
-      <first_name>Thierry Henry</first_name>
-      <Country_birth>Frances</Country_birth>
-      <Position>CF</Position>
-      </person>
-      <person>
-      <first_name>Bacary Sagna</first_name>
-      <Country_birth>Francia</Country_birth>  
-      <Position>DF</Position>
-      </person>
-      <person>
-      <first_name>Dennis Bergkamp</first_name>
-      <Country_birth>Holanda</Country_birth>
-      <Position>MDO</Position>
-      </person>
-      <person>
-      <first_name>Robert Pirès</first_name>
-      <Country_birth>Francia</Country_birth>  
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>David Seaman</first_name>
-      <Country_birth>Inglaterra</Country_birth>  
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Tony Adams</first_name>
-      <Country_birth>Inglaterra</Country_birth>  
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>David O'Leary</first_name>
-      <Country_birth>Inglaterra</Country_birth>  
-      <Position>DF</Position>
-      </person>
-      <person>
-      <first_name>Ian Wright</first_name>
-      <Country_birth>Inglaterra</Country_birth>  
-      <Position>DF</Position>
-      </person>
-      <person>
-      <first_name>Mikel Arteta </first_name>
-      <Country_birth>España</Country_birth>  
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Lukas Podolski</first_name>
-      <Country_birth>Alemania</Country_birth>  
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Robin Van Persie</first_name>
-      <Country_birth>Holanda</Country_birth>  
-      <Position>CF</Position>
-      </person>
-      <person>
-      <first_name>Ted Drake</first_name>
-      <Country_birth>Inglaterra</Country_birth>  
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Olivier Giroud</first_name>
-      <Country_birth>Francia</Country_birth>  
-      <Position>DC</Position>
-      </person>
-      <person>
-      <first_name>Emiliano Viviano</first_name>
-      <Country_birth>Italia</Country_birth>  
-      <Position>GK</Position>
-      </person>
-      <person>
-      <first_name>Theo Walcott</first_name>
-      <Country_birth>Inglaterra</Country_birth>  
-      <Position>FW</Position>
-      </person>
-      <person>
-      <first_name>Chamberlain</first_name>
-      <Country_birth>Inglaterra</Country_birth>  
-      <Position>FW</Position>
-      </person>
-      <person>
-      <first_name>Ramsey</first_name>
-      <Country_birth>Italia</Country_birth>  
-      <Position>MF</Position>
-      </person>
-      <person>
-      <first_name>Nacho Monreal</first_name>
-      <Country_birth>España</Country_birth>  
-      <Position>DF</Position>
-      </person>
-      <person>
-      <first_name>Santi Cazorla</first_name>
-      <Country_birth>España</Country_birth>  
-      <Position>MF</Position>
-      </person>
-      <person>
-      <first_name>Mathieu Flamini</first_name>
-      <Country_birth>Francia</Country_birth>  
-      <Position>MF</Position>
-      </person>
-      <person>
-      <first_name>Yaya Sanogo</first_name>
-      <Country_birth>Francia</Country_birth>  
-      <Position>FW</Position>
-      </person>
-      <person>
-      <first_name>Abou Diaby</first_name>
-      <Country_birth>Francia</Country_birth>  
-      <Position>MF</Position>
-      </person>
-      <person>
-      <first_name>Park Chu-Young</first_name>
-      <Country_birth>Corea Norte</Country_birth>  
-      <Position>FW</Position>
-      </person>
-      <person>
-      <first_name>Serge Gnabry</first_name>
-      <Country_birth>Alemania</Country_birth>  
-      <Position>FW</Position>
-      </person>
-   </Players>
-
-</Team>
-
-<Team id="AstonVilla">
-
-   <image>
-   <src>images/astonvilla.png</src>
-   <title> whatever title you want for the image</title>
-   </image>
-   <Team_Name>Aston Villa</Team_Name>
-
-   <description>Es uno de los equipos más antiguos y laureados de Inglaterra, habiendo ganado siete veces la First Division Championship, otras siete la FA Cup, 5 Football League Cup y 1 Community Shield. También ganó en 1982 la Copa de Europa, actualmente conocida como la UEFA Champions League, </description>
-   <City>Londres </City>
-   <Stadium>Villa Park </Stadium>
-   <Players> 
-      <person>
-      <first_name>Nolberto Solano</first_name>
-      <Country_birth>Peru</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Gabby Agbonlahor</first_name>
-      <Country_birth>Inglaterra</Country_birth>  
-      <Position>DF</Position>
-      </person>
-      <person>
-      <first_name>Juan Pablo Angel</first_name>
-      <Country_birth>Colombia</Country_birth>
-      <Position>CF</Position>
-      </person>
-      <person>
-      <first_name>Gareth Barry</first_name>
-      <Country_birth>Inglaterra</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Darius Vassell</first_name>
-      <Country_birth>Inglaterra</Country_birth>
-      <Position>MF</Position>
-      </person>
-      <person>
-      <first_name>Leandro Bacuna</first_name>
-      <Country_birth>Holanda</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Ashley Westwood</first_name>
-      <Country_birth>Inglaterra</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Fabian Delph</first_name>
-      <Country_birth>Inglaterra</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Daniel Johnson</first_name>
-      <Country_birth>Inglaterra</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Charles N'Zogbia</first_name>
-      <Country_birth>Francia</Country_birth>
-      <Position>MD</Position>
-      </person>
-   </Players>
-
-</Team>
-
-<Team id="Burnley">
-   <image>
-   <src>images/burnley.png</src>
-   <title>FC Burnley</title>
-   </image>
-   <Team_Name>Burnley</Team_Name>
-   <description>El Burnley Football Club es un club de fútbol de la ciudad inglesa de Burnley, en el condado de Lancashire. Fue fundado en 1882 y juega en la Premier League tras ascender en la temporada 2013/14</description>
-   <City>Londres </City>
-   <Stadium>Burnley </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Chelsea">
-   <image>
-   <src>images/chelsea.png</src>
-   <title>Chelsea FC</title>
-   </image>
-   <Team_Name>Chelsea</Team_Name>
-   <description>Fue fundado el 10 de marzo de 1905. El Chelsea ha conseguido a nivel nacional cuatro Premier Leagues, siete FA Cups, cinco Football League Cups y cuatro Community Shields. En el ámbito europeo ha logrado una UEFA Champions League como su mayor logro, una UEFA Europa League, dos Recopas de Europa y una Supercopa de Europa. Su último logro fue ganar la UEFA Europa League, el 15 de mayo de 2013.4 Su rival tradicional es el Fulham FC, contra el cual se enfrenta en el Derbi del Oeste de Londres.5
-El Chelsea tuvo su primer momento de éxito en 1955, cuando ganó su primer campeonato de liga. Chelsea también consiguió importantes competiciones de copa durante los años 1960 y años 1970, pero no logró consagrarse en alguna otra hasta 1997. El más importante período de éxito del Chelsea fue cuando se consagró campeón de la Premier League en las temporadas 2004-05, 2005-06 y 2009-10 y cuando logró llegar a la final de la Liga de Campeones de la UEFA en la temporada 2007-08 y coronarse campeón de la edición 2011-12. El club también logró consagrase como el número 1 del Ránking de la UEFA en 2008, siendo el primer club inglés en haber logrado este galardón en el Siglo XXI</description>
-   <City>Londres </City>
-   <Stadium>Stamford Bridge </Stadium>
-   <Players> 
-      <person>
-      <first_name>Gianfranco Zola</first_name>
-      <Country_birth>Italia</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Peter Bonetti</first_name>
-      <Country_birth>Inglaterra</Country_birth>  
-      <Position>DF</Position>
-      </person>
-      <person>
-      <first_name>Ruud Gullit</first_name>
-      <Country_birth>Holanda</Country_birth>
-      <Position>MC</Position>
-      </person>
-      <person>
-      <first_name>John Hollins</first_name>
-      <Country_birth>Inglaterra</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>John Terry</first_name>
-      <Country_birth>Inglaterra</Country_birth>
-      <Position>DF</Position>
-      </person>
-      <person>
-      <first_name>Frank Lampard</first_name>
-      <Country_birth>Inglaterra</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Didier Drogba</first_name>
-      <Country_birth>Costa de Marfil</Country_birth>
-      <Position>DC</Position>
-      </person>
-      <person>
-      <first_name>Kerry Dixon</first_name>
-      <Country_birth>Inglaterra</Country_birth>
-      <Position>MD</Position>
-      </person>
-      <person>
-      <first_name>Petr Cech</first_name>
-      <Country_birth>Rep. Cheka</Country_birth>
-      <Position>GK</Position>
-      </person>
-      <person>
-      <first_name>Arjen Robben</first_name>
-      <Country_birth>Holanda</Country_birth>
-      <Position>CD</Position>
-      </person>
-
-   </Players>
-
-</Team>
-
-<Team id="Crystal Palace">
-   <image>
-   <src>images/crystalpalace.png</src>
-   <title>crystal palace FC</title>
-   </image>
-   <Team_Name>Crystal Palace</Team_Name>
-
-   <description>Crystal Palace Football Club es un club de fútbol de Inglaterra, de la parte sur de la ciudad de Londres. Fue fundado en 1905. Durante la temporada 2012-13 de la Football League Championship (Segunda División Del Fútbol Ingles), Palace terminó quinto y ganó el ascenso a la Premier League a través de los play-offs. En su primera temporada luego de ocho años en segunda división el Crystal Palace terminó 11 en la tabla, lo que le valió a Tony Pulis ser nombrado como Entrenador del Año de la Premier League</description>
-   <City>Londres </City>
-   <Stadium>Crystal Palace </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Everton">
-   <image>
-   <src>images/everton.png</src>
-   <title>Everton FC</title>
-   </image>
-   <Team_Name>Everton</Team_Name>
-
-   <description>El Everton Football Club es un club de fútbol del Reino Unido, de la ciudad de Liverpool en el condado de Merseyside. El club compite en la Premier League, la competición más prestigiosa del fútbol británico. Ha competido en la liga de más alto nivel con un récord de 108 temporadas, ha jugado más partidos en estas ligas más que ningún otro equipo británico y ha salido campeón 9 veces—es el cuarto equipo con más copas de la liga.1 Everton ha permanecido en la Premier League desde 1954, y fue miembro fundador de la Premier League en 1992.</description>
-   <City>Londres </City>
-   <Stadium>Everton </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Hull">
-   <image>
-   <src>images/hull.png</src>
-   <title>Hull image</title>
-   </image>
-   <Team_Name>Hull</Team_Name>
-   <description>El Hull City es un club de fútbol de Inglaterra, de la ciudad de Kingston upon Hull en Yorkshire. Fue fundado en 1904 y a partir de la temporada 2013/14 se desempeña en la Premier League, la máxima división del fútbol inglés.</description>
-   <City>Londres </City>
-   <Stadium>Hull</Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Leicester">
-   <image>
-   <src>images/leicester.png</src>
-   <title>leicester image</title>
-   </image>
-   <Team_Name>Leicester</Team_Name>
-   <description>Se fundó en 1884 y desde la temporada 2014/2015 juega en la FA Premier League. Regreso a la Premier League luego de estar más de diez años relegado de esta división.
-
-El Leicester City fue elegido para disputar la Football League en 1894. El logro más alto en la historia del club a nivel liga fue el haber alcanzado el segundo lugar en la máxima categoría en 1928-1929. El club tiene siete títulos de segunda división (seis Second Division y uno Football League Championship) y uno más de la Football League One. También han ganado la Copa de la Liga en tres ocasiones y han sido subcampeones de la FA Cup cuatro veces, un record de derrotas en finales en donde aún siguen sin haber logrado el título.</description>
-   <City>Londres </City>
-   <Stadium>Leicester </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Liverpool">
-   <image>
-   <src>images/liverpool.png</src>
-   <title>liverpool Fc</title>
-   </image>
-   <Team_Name>Liverpool</Team_Name>
-   <description>Juega en el histórico estadio Anfield y utiliza una indumentaria totalmente roja. Su clásico rival más importante es el Manchester United, una rivalidad que se remonta a 1897. Otro clásico importante es el que disputa con Everton, el equipo que jugaba originalmente en Anfield y cuya retirada del estadio motivó que el dueño fundara el Liverpool Football Club.
-
-Liverpool es el equipo inglés con el mayor número de títulos de Campeón de Europa, con cinco trofeos obtenidos frente a tres de Manchester United, dos de Nottingham Forest y uno del Aston Villa y Chelsea. Además, durante décadas el club con el mayor número de títulos en la First Division / Premier League con 18 títulos.
-
-   </description>
-   <City>Londres </City>
-   <Stadium>Liverpool </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="ManchesterCity">
-   <image>
-   <src>images/manchestercity.png</src>
-   <title>manchestercity </title>
-   </image>
-   <Team_Name>Manchester City</Team_Name>
-   <description>Fue fundado en 1880 como St. Marks (West Gorton); luego, pasó a denominarse Ardwick A.F.C. y finalmente el 16 de abril de 1894 cambió su nombre por el de Manchester City F.C. A lo largo de su historia, el club ha ganado la Premier League en cuatro ocasiones y ha sido subcampeón en otras cuatro ocasiones. Ha ganado la FA Cup en cinco ocasiones y alcanzó otras cinco finales. Además, tiene tres Football League Cup, cuatro Community Shield y una Recopa de Europa.
-
-Después de perder la final de la FA Cup de 1981, el club pasó por un período de decadencia, que culminó en 1998 con su descenso a la tercera división del fútbol inglés, siendo la primera vez en su historia. Después de recuperar su sitio en la Premier League el 1 de septiembre de 2008, Abu Dhabi United Group for Development and Investment, un grupo inversor de los Emiratos Árabes con Mansour bin Zayed Al-Nahyan como máximo accionista, se hizo con el control del club por unos 250 millones de euros, relevando a Thaksin Shinawatra, hasta entonces dueño del club.
-   </description>
-   <City>Londres </City>
-   <Stadium>ManchesterCity </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="ManchesterUnited">
-   <image>
-   <src>images/manchesterunited.png</src>
-   <title>manchesterunited image</title>
-   </image>
-   <Team_Name>Manchester United</Team_Name>
-   <description>Nació bajo la denominación «Newton Heath LYR Football Club» en 1878, siendo el equipo del depósito ferroviario Lancashire and Yorkshire Railway Company, ubicado en Newton Heath.2 El club se incorporó a la First Division en 1892.2 5 Tras estar cerca de la bancarrota en 1902, J. H. Davies tomó las riendas del club y cambió el nombre, llamándolo Manchester United.6 Su estadio fue bombardeado durante la Segunda Guerra Mundial lo que motivó al club a buscar la caridad de sus vecinos del Manchester City, quienes les permitieron jugar en Maine Road durante un tiempo a cambio de un costo anual.7 8 El United nombró a Matt Busby como entrenador del equipo tras la guerra y su política, por entonces inaudita, de la promoción de la mayor parte de los jugadores del equipo juvenil del club tuvo un gran éxito, al ganar la liga en 1956 y 1957.9 Este éxito tuvo un alto en el camino con el desastre aéreo de Múnich de 1958, en el que ocho jugadores del equipo perdieron la vida.10 11 A pesar de dicha tragedia, el conjunto supo recuperarse y ganó la liga en 1965 y 1967, así como la Copa Europea en 1968. El club no tuvo de nuevo un éxito tan notable hasta la década de 1990, cuando Alex Ferguson dirigió al equipo a la obtención de ocho campeonatos ligueros en once años. En 1999, el Manchester United se convirtió en el primer equipo inglés en ganar la Champions, la Premier League y la FA Cup en la misma temporada —el «triplete» del club—.12
-
-Entre sus principales logros a nivel nacional se encuentran haber ganado la First Division/Premier League en 20 ocasiones, la FA Cup en 11 y la Supercopa de Inglaterra en 20, récords absolutos en los tres casos, además de cuatro ediciones de la Copa de la Liga de Inglaterra. A nivel europeo, ha obtenido tres veces la Liga de Campeones, empatado en séptimo lugar y segundo mejor inglés, además de una Recopa de Europa.13 Es el único club inglés en convertirse en campeón mundial de clubes, al conquistar la Copa Intercontinental en 1999 y la Copa Mundial de Clubes de la FIFA en 2008, tras derrotar a los entonces campeones de América Palmeiras y Liga de Quito, respectivamente.
-
-Los principales rivales del Manchester United han sido el Liverpool y Manchester City, a quien se enfrenta en el derby de Manchester.
-
-En la cultura popular, es considerado como uno de los más populares del mundo,14 debido a que cuenta con 659 millones de seguidores a nivel internacional hasta mayo de 2012, según una investigación realizada por la empresa Kantar. De esta cifra, 325 millones provienen del continente asiático, 173 millones del Oriente Medio y África, 90 millones de Europa y finalmente 71 millones de América.15 16 De igual manera, ha tenido el promedio de asistencia más alto en el fútbol inglés desde 1957, salvo algunas excepciones en que ha sido superado por el Tottenham, Everton y Liverpool.17
-   </description>
-   <City>Londres </City>
-   <Stadium>Manchester United </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Newcastle">
-   <image>
-   <src>images/newcastle.png</src>
-   <title>newcastle image</title>
-   </image>
-   <Team_Name>Newcastle</Team_Name>
-   <description>Fundado en 1892 tras la fusión de dos equipos locales, el Newcastle East End y el Newcastle West End, al club se le conoce como The Magpies (Las Urracas) o The Toon. El Newcastle ha conquistado 4 títulos de la liga inglesa, todos conseguidos antes de la Segunda Guerra Mundial, y 6 FA Cups. A nivel internacional, ha ganado una Copa de Ferias en 1969 y en el 2006 la Copa Intertoto. El estadio del Newcastle, desde su fundación, es el St. James' Park.
-
-Tras la fusión de los dos clubes originarios en 1882, el Newcastle United siguió vistiendo el uniforme rojo del Newcastle East End dos años más. A partir de 1894 adoptaron la definitiva vestimenta a rayas verticales blancas y negras con los pantalones negros.
-
-El club ha sostenido una añeja rivalidad con sus vecinos Sunderland A.F.C. desde la primera vez que se enfrentaron en 1898</description>
-   <City>Londres </City>
-   <Stadium>Newcastle </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="QPR">
-   <image>
-   <src>images/qpr.png</src>
-   <title>QPR image</title>
-   </image>
-   <Team_Name>QPR</Team_Name>
-   <description>El Queens Park Rangers Football Club o QPR es un club de fútbol de Inglaterra, de Shepherd's Bush, en el distrito londinense de Hammersmith y Fulham. Fue fundado en 1882 y juega en la Barclays Premier League. Es conocido como el equipo que ha llegado a estar en Bancarrota.
-
-En agosto de 2007 el QPR fue comprado por el magnate de la Fórmula 1, Bernie Ecclestone y Flavio Briatore, que vendió un 20% a la familia del magnate de acero Lakshmi Mittal en diciembre de aquel año. Alejandro Agag también entró junto a Briatore en el accionariado del club.</description>
-   <City>Londres </City>
-   <Stadium>QPR </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Southampton">
-   <image>
-   <src>images/southampon.png</src>
-   <title>southampon  image</title>
-   </image>
-   <Team_Name>Southampton</Team_Name>
-   <description>El sueño de disputar la First League en The Dell se cumpliría por fin hasta 1966, cuando el equipo dirigido por Ted Bates consiguió el subcampeonato en la categoría, teniendo a Martin Chivers como autor de 30 de los 86 anotaciones en aquella temporada.
-
-A le temporada siguiente Ron Davies llegó para convertirse en el goleador del club, con 43 de los 74 goles que hizo el equipo en ese año. Southampton permaneció 8 años seguidos en la First League, siendo el séptimo puesto su mejor participación en las temporadas 1968-69 y 1970-71. Este séptimo lugar le fue suficiente para tener su primera participación en copas europeas, primero en la Copa de Ferias de 1969-70(eliminado en 3.ª ronda ante Newcastle United), y después en la Copa UEFA de 1971-72, donde el Athletic Bilbao se encargó de echarlos en la primera ronda.
-
-En diciembre de 1973, el longevo técnico Ted Bates se retiró para ser reemplazado por Lawrie McMenemy. Los Saints se convirtieron en las primeras víctimas del nuevo sistema de descenso de 3 en 1974, cuando fueron relegados, junto con el Manchester United y el Norwich City.
-   </description>
-   <City>Londres </City>
-   <Stadium>Southampton </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Spurs">
-   <image>
-   <src>images/tottenham.png</src>
-   <title>tottenham Spurs </title>
-   </image>
-   <Team_Name>Spurs</Team_Name>
-   <description>Tottenham Hotspur Football Club, también conocido como Los Spurs, es un club de fútbol inglés situado en Tottenham, Londres, que compite en la FA Premier League desde su inauguración (véase FA Premier League 1992 - 93). Ejerce de local en White Hart Lane, que posee capacidad para 36.284 espectadores.1
-
-Fundado en 1882, el Tottenham ganó por primera vez la FA Cup en 1901 (siendo hasta la actualidad el único club no perteneciente al sistema de Liga en hacerlo). El Tottenham fue el primer club del siglo XX en conseguir el doblete de Liga y Copa durante la temporada 1960-61. Luego de defender con éxito la FA Cup en 1962, en 1963 se convirtió en el primer equipo británico ganador de una competición internacional de la UEFA, al conquistar la Recopa de Europa en 1963.2 En 1967 se coronó campeón de la FA Cup por tercera vez en los años '60, finalizando su década más exitosa. Durante los años '70 Tottenham se consagró campeón de la League Cup en dos ocasiones, y se convirtió en el campeón inaugural de la Copa de la UEFA en 1972, siendo el primer club británico en lograr la consecución de dos trofeos europeos distintos. En la década de 1980 los spurs levantaron la FA Cup dos veces, la Charity Shield y la Copa de la UEFA en 1984. En los años 1990 el club ganó la FA Cup y la League Cup. Al consagrarse campeón de la League Cup por última vez en el año 2008, el Tottenham ha logrado obtener al menos un trofeo importante en cada una de las últimas seis décadas - logro sólo igualado por el Manchester United.
-
-El lema del club es Audere est facere (to dare is to do), que en español significa Atreverse es lograrlo, y su emblema actual es un gallo de pelea de pie sobre un balón de fútbol clásico. Posee una histórica rivalidad con sus vecinos del Arsenal, club con el cual disputa el Derbi del Norte de Londres
-   </description>
-   <City>Londres </City>
-   <Stadium>Spurs </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Stoke">
-   <image>
-   <src>images/stoke.png</src>
-   <title>stoke city</title>
-   </image>
-   <Team_Name>Stoke</Team_Name>
-   <description>Fue fundado en 1863 y es uno de los clubes de futbol profesional más antiguo del mundo. En el equipo ha jugado muchos buenos futbolistas como Rory Delap, Charlie Adam, Asmir Begovic, Michael Owen, Peter Crouch y Stanley Matthews que ganó el primer Balón de Oro de la historia, fue un jugador extraordinario y es el mejor futbolista que ha jugado en el club.
-   </description>
-   <City>Londres </City>
-   <Stadium>Stoke </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Sunderland">
-   <image>
-   <src>images/sunderland.png</src>
-   <title>sunderland FC image</title>
-   </image>
-   <Team_Name>Sunderland</Team_Name>
-   <description>El Sunderland Association Football Club es un club de fútbol de Inglaterra, de la ciudad de Sunderland en Tyne y Wear. Fue fundado en 1879 y juega en la Premier League de Inglaterra.
-
-El Sunderland supo saborear las mieles de la victoria cuando arrasaba en Inglaterra a fines del siglo XIX y principios del siglo XX. Antes de la Segunda Guerra Mundial, el Sunderland había sido campeón seis veces. Su último logro importante fue en 1936. Sin embargo, después de la Segunda Guerra Mundial, el Sunderland ganó la FA Cup en un partido no apto para cardíacos sobreponiéndose por 1 a 0 al poderoso Leeds United. Un personaje que no debe ser olvidado por ningún verdadero hincha del Sunderland es Jimmy Montgomery. Este arquero jugó un papel crucial para que el Sunderland obtuviera la FA Cup. Por desgracia para sus hinchas, 'Los Black Cats' han estado dando tumbos por las 3 divisiones del fútbol inglés desde los 70s.
-   </description>
-   <City>Londres </City>
-   <Stadium>Sunderland </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Swansea">
-   <image>
-   <src>images/swan.png</src>
-   <title>swan FC</title>
-   </image>
-   <Team_Name>Swansea</Team_Name>
-   <description>El Swansea City Association Football Club (en galés Clwb Pêl-droed Dinas Abertawe) es un club de fútbol de Gales de la ciudad de Swansea. Fue fundado en 1912 y juega en la Premier League de Inglaterra.
-
-Fundado en 1912 como Swansea Town AFC adoptó en 1969, tras obtener Swansea el estatus de ciudad, su actual denominación. Se unió a la Football League en 1921 y es miembro desde entonces. Entre 1981 y 1983 jugó en la First Division, máxima categoría del fútbol inglés, finalizando sexto en su primera temporada. En la temporada 2010/11 consiguió el ascenso a la Premier League, siendo el primer club de Gales que disputará esta competición desde su fundación en 1992.
-
-El Swansea City es uno de los 6 equipos galeses que participan en la liga inglesa. Hasta el año 1992 la FAW no organizaba ningún torneo liguero, con la puesta en marcha de la Welsh Premier League el Swansea rechazó la invitación para participar en ella. En 1996 dejó de participar en la Welsh Cup.
-   </description>
-   <City>Londres </City>
-   <Stadium>Swansea </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="Westbrom">
-   <image>
-   <src>images/albion.png</src>
-   <title>West Brown FC</title>
-   </image>
-   <Team_Name>Westbrom</Team_Name>
-   <description>West Bromwich (cuyo nombre podría traducirse al español como Bromwich del Oeste) es una ciudad en el municipio metropolitano de Sandwell, en Midlands del Oeste, históricamente Staffordshire, Inglaterra. Se encuentra a 8 km (5 millas) al noroeste de Birmingham, junto a la carretera A41, que une Londres con Holyhead. West Bromwich forma parte del Black Country. West Bromwich es la mayor ciudad dentro del Municipio de Sandwell con una población de 136.940 (2001).
-
-El lema en el escudo de armas de la ciudad proclama en latín "Labor omnia vincit", que quiere decir "El Trabajo Conquista Todo".
-   </description>
-   <City>Londres </City>
-   <Stadium>Westbrom </Stadium>
-   <Players> </Players>
-
-</Team>
-
-<Team id="WestHam">
-   <image>
-   <src>images/westham.png</src>
-   <title>westham  the image</title>
-   </image>
-   <Team_Name>West Ham</Team_Name>
-   <description>West Ham United FC (también conocido con los nombres The Irons, The Hammers (Los Martillos) y The Academy of Football) fue fundado en 1895 con el nombre de Thames Ironworks and Shipbuilding Co. Ltd. En 1900 se cambió el nombre por el actual. En el año 1919 el West Ham fue seleccionado para participar de la Football League Second Division, ascendiendo a la First Division en el año 1923, mismo año en que el club llegó a la final de la FA Cup, la primera que se jugó en el Estadio de Wembley, en la final conocida como la final del caballo blanco, la cual ganó el Bolton Wanderers por 2:0.
-
-En los Años 60 la prensa inglesa denominó al club The Academy of Football, debido a la cantidad de jóvenes talentos que procedían de su cantera.
-
-En 1964 ganó su primer título, la Copa de Inglaterra.
-
-En 1965 conquistó su primer título continental: la Recopa de Europa, venciendo en la final al alemán Múnich 1860. Volvió a reeditar sus laureles nacionales, en 1975, ganando de nuevo la Copa inglesa. Solo una temporada después, volvió a llegar a una final de la Recopa, pero la perdió ante el RSC Anderlecht belga.
-
-La etapa más gloriosa del club data de 1980 y de 1981. En esos años, el club estaba sumido en la segunda división, y primero, logró por tercera vez el trofeo de la FA, y el siguiente año, la liga de segunda división, con lo que desde 1981 hasta 1989, se mantienen en primera. Comienza un periodo de subidas y bajadas entre la segunda división (llamada Championship) a la que descienden nuevamente en 1992 ascendiendo nuevamente y una recién creada FA Premier League. Sufren otro descenso en el 2003 y no es hasta el 2005 cuando ascienden de nuevo a la Premier para acabar como colista en la temporada 2010-11.
-
-Su última alegría continental llegó en 1999, cuando ganó la Copa Intertoto, lo que le permitió disputar la Copa UEFA.
-
-   </description>
-   <City>Londres </City>
-   <Stadium>West Ham </Stadium>
-   <Players> </Players>
-
-</Team>
-
-</League>
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.1.1/55.27 -- Jan van Straaten" generator-info-url="http://www.webgrabplus.com">
+  <channel id="Metro">
+    <display-name lang="es">Metro</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="A 24">
+    <display-name lang="es">A 24</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="C5N">
+    <display-name lang="es">C5N</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Crónica TV">
+    <display-name lang="es">Crónica TV</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="26 TV">
+    <display-name lang="es">26 TV</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Todo Noticias">
+    <display-name lang="es">Todo Noticias</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="América 2">
+    <display-name lang="es">América 2</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Telefe">
+    <display-name lang="es">Telefe</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Tv Pública">
+    <display-name lang="es">Tv Pública</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Canal 13">
+    <display-name lang="es">Canal 13</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Canal 9">
+    <display-name lang="es">Canal 9</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Encuentro">
+    <display-name lang="es">Encuentro</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Magazine">
+    <display-name lang="es">Magazine</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="ESPN">
+    <display-name lang="es">ESPN</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="ESPN +">
+    <display-name lang="es">ESPN +</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="ESPN 3">
+    <display-name lang="es">ESPN 3 SD</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="T y C Sports">
+    <display-name lang="es">T y C Sports</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Fox Sports">
+    <display-name lang="es">Fox Sports</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="NBA - Tv">
+    <display-name lang="es">NBA - Tv</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Fox Sports 2">
+    <display-name lang="es">Fox Sports 2</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Fox Sports 3">
+    <display-name lang="es">Fox Sports 3</display-name>
+    <url>http://www.buscadorcablevision.com.ar</url>
+  </channel>
+  <channel id="Sky Sports 1">
+    <display-name lang="en">Sky Sports 1</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="Sky Sports 3">
+    <display-name lang="en">Sky Sports 3</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="Sky Sports 4">
+    <display-name lang="en">Sky Sports 4</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="Sky Sports 5">
+    <display-name lang="en">Sky Sports 5</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="Sky Sports F1">
+    <display-name lang="en">Sky Sports F1</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="Eurosport">
+    <display-name lang="en">Eurosport</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="Eurosport 2">
+    <display-name lang="en">Eurosport 2</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="Eurosport HD">
+    <display-name lang="en">Eurosport HD</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="BT Sport 1">
+    <display-name lang="en">BT Sport 1</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="BT Sport Europe">
+    <display-name lang="en">BT Sport Europe</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="BT Sport 2">
+    <display-name lang="en">BT Sport 2</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="BT Sport\/\/ESPN">
+    <display-name lang="en">BT Sport\/\/ESPN</display-name>
+    <url>http://www.uk-sky.com</url>
+  </channel>
+  <channel id="1HD">
+    <display-name lang="en">1HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/1HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="2HD">
+    <display-name lang="en">2HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/2HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="3HD">
+    <display-name lang="en">3HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/3HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="4HD">
+    <display-name lang="en">4HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/4HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="5HD">
+    <display-name lang="en">5HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/5HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="6HD">
+    <display-name lang="en">6HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/6HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="7HD">
+    <display-name lang="en">7HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/7HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="8HD">
+    <display-name lang="en">8HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/8HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="9HD">
+    <display-name lang="en">9HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/9HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="10HD">
+    <display-name lang="en">10HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/10HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="11HD">
+    <display-name lang="en">11HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/11HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="12HD">
+    <display-name lang="en">12HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/12HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="15HD">
+    <display-name lang="en">15HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/15HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <channel id="16HD">
+    <display-name lang="en">16HD</display-name>
+    <icon src="https://static.beinsports-social.com//images/16HD.png" />
+    <url>http://www.en.beinsports.net</url>
+  </channel>
+  <programme start="20151122000000 -0300" stop="20151122003000 -0300" channel="Metro">
+    <title lang="es">Reporte publicidad (?)</title>
+    <desc lang="es">Las ultimas novedades en el mundo de la publicidad y los mas creativos spot publicitarios del mundo(n)</desc>
+  </programme>
+  <programme start="20151122003000 -0300" stop="20151122010000 -0300" channel="Metro">
+    <title lang="es">Fiancee (?)</title>
+    <desc lang="es">Programa de moda para novias(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122013000 -0300" channel="Metro">
+    <title lang="es">Move (?)</title>
+    <desc lang="es">En cada capítulo, habrá un recorrido por estrenos de obras de teatro, avant premiere de películas, show musicales, eventos de moda y tendencia, exposiciones de diseño y tecnología, notas con artistas nacionales y extranjeros, y mucho más(n)</desc>
+  </programme>
+  <programme start="20151122013000 -0300" stop="20151122020000 -0300" channel="Metro">
+    <title lang="es">En forma de vivir mejor (?)</title>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122023000 -0300" channel="Metro">
+    <title lang="es">Quinceañeras reales (?)</title>
+    <desc lang="es">'Quinceañeras reales' es el único programa de TV dedicado a las quinceañeras. Es informal y divertido, donde algunas chicas cuentan cómo vivieron su fiesta de 15(n)</desc>
+  </programme>
+  <programme start="20151122023000 -0300" stop="20151122030000 -0300" channel="Metro">
+    <title lang="es">OdontoTV (?)</title>
+  </programme>
+  <programme start="20151122030000 -0300" stop="20151122033000 -0300" channel="Metro">
+    <title lang="es">Cultura al día (?)</title>
+    <desc lang="es">Un repaso de la actividad cultural de la Argentina y el mundo. El arte y sus protagonistas. Teatro, literatura, música, pintura y una agenda de eventos y muestras(n)</desc>
+  </programme>
+  <programme start="20151122033000 -0300" stop="20151122040000 -0300" channel="Metro">
+    <title lang="es">LP Moda (?)</title>
+  </programme>
+  <programme start="20151122040000 -0300" stop="20151122070000 -0300" channel="Metro">
+    <title lang="es">Creativa (?)</title>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122073000 -0300" channel="Metro">
+    <title lang="es">Diagnóstico y debate (?)</title>
+    <desc lang="es">Diagnóstico &amp; Debate TV es un programa de televisión que tiene la misión de llegar a todos los puntos del país con la difusión de los principales temas de actualidad, la concientización de las necesidades y los logros del sector salud(n)</desc>
+  </programme>
+  <programme start="20151122073000 -0300" stop="20151122080000 -0300" channel="Metro">
+    <title lang="es">Pesca visión (?)</title>
+    <desc lang="es">Para los fanáticos de deportes outdoors, la mejor guía de servicios, excursiones, alojamientos, rutas, ríos y toda la información que no podes dejar de ver antes de programar tu salida de pesca(n)</desc>
+  </programme>
+  <programme start="20151122080000 -0300" stop="20151122083000 -0300" channel="Metro">
+    <title lang="es">Autoexecutive (?)</title>
+    <desc lang="es">Información de los mejores salones de automóviles y desde las automotrices con los lanzamientos al mercado de los nuevos vehículos. El más completo panorama del mundo automotor(n)</desc>
+  </programme>
+  <programme start="20151122083000 -0300" stop="20151122090000 -0300" channel="Metro">
+    <title lang="es">La gran vidriera (?)</title>
+    <desc lang="es">Programa de actualidad, información sobre espectáculos, medicina, moda, belleza, opinión, cobertura de exposiciones, empresas y eventos(n)</desc>
+  </programme>
+  <programme start="20151122090000 -0300" stop="20151122093000 -0300" channel="Metro">
+    <title lang="es">A pleno (?)</title>
+    <desc lang="es">Un programa donde la kinesióloga y profesora de danzas Verónica Lercari, nos brinda la posibilidad de trabajar el cuerpo con su técnica de gimnasia verler fundada en la biomecanica y la conciencia postural del aparato locomotor(n)</desc>
+  </programme>
+  <programme start="20151122093000 -0300" stop="20151122100000 -0300" channel="Metro">
+    <title lang="es">Aqui país industrias y negocios (?)</title>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122103000 -0300" channel="Metro">
+    <title lang="es">El expreso viajero (?)</title>
+    <desc lang="es">Formato exclusivo de turismo, que tiene como objetivo la difusión de los destinos y lugares atractivos de carácter nacional e internacional, con entrevistas a los principales funcionarios y operadores turísticos(n)</desc>
+  </programme>
+  <programme start="20151122103000 -0300" stop="20151122110000 -0300" channel="Metro">
+    <title lang="es">Mundo turístico (?)</title>
+    <desc lang="es">Mundo Turístico es un programa de televisión, dedicado especialmente a quienes gustan de los viajes y el turismo y desean estar al tanto de todas las novedades de esta actividad tan apasionante(n)</desc>
+  </programme>
+  <programme start="20151122110000 -0300" stop="20151122113000 -0300" channel="Metro">
+    <title lang="es">Vivir evolucionando (?)</title>
+  </programme>
+  <programme start="20151122113000 -0300" stop="20151122120000 -0300" channel="Metro">
+    <title lang="es">Check In (?)</title>
+    <desc lang="es">¿Qué hacer cuando las vacaciones son demasiado cortas? Zsa Zsa y Maud te enseñan a aprovechar al máximo el tiempo en tus viajes. Check In es todo lo que necesitas saber y hacer en tus escapadas a los destinos más divertidos y alucinantes(n)</desc>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122123000 -0300" channel="Metro">
+    <title lang="es">El expreso viajero (?)</title>
+    <desc lang="es">Formato exclusivo de turismo, que tiene como objetivo la difusión de los destinos y lugares atractivos de carácter nacional e internacional, con entrevistas a los principales funcionarios y operadores turísticos(n)</desc>
+  </programme>
+  <programme start="20151122123000 -0300" stop="20151122130000 -0300" channel="Metro">
+    <title lang="es">Estamos de turno (?)</title>
+    <desc lang="es">Magazine informativo del sector farmacéutico. es el programa de la Cámara Argentina de Farmacias(n)</desc>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122140000 -0300" channel="Metro">
+    <title lang="es">Agro TV (?)</title>
+    <desc lang="es">Toda la tecnología agropecuaria, exhibiendo las experiencias más exitosas y rentables de los productores de punta. Con la opinión de los productores y los agentes del cambio del agro argentino(n)</desc>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122143000 -0300" channel="Metro">
+    <title lang="es">Mirta te acompaña (?)</title>
+    <desc lang="es">Programa en el que Mirta Tundis, periodista especializada en materia previsional, atiende las preguntas que le realizan nuestros adultos mayores(n)</desc>
+  </programme>
+  <programme start="20151122143000 -0300" stop="20151122150000 -0300" channel="Metro">
+    <title lang="es">Formatear (?)</title>
+  </programme>
+  <programme start="20151122150000 -0300" stop="20151122153000 -0300" channel="Metro">
+    <title lang="es">Vivi Corrientes (?)</title>
+    <desc lang="es">Programa que difunde los atractivos turísticos de la ciudad de Corrientes y del interior de la provincia, destacándose imágenes de los lugares más significativos, históricos, turísticos y culturales que posee la provincia(n)</desc>
+  </programme>
+  <programme start="20151122153000 -0300" stop="20151122160000 -0300" channel="Metro">
+    <title lang="es">A ciencia cierta (?)</title>
+    <desc lang="es">A Ciencia Cierta es un programa televisivo que tiene como objetivo principal educar y brindar información a la comunidad sobre diversos temas médicos. Apunta a generar conciencia en el público(n)</desc>
+  </programme>
+  <programme start="20151122160000 -0300" stop="20151122163000 -0300" channel="Metro">
+    <title lang="es">Yes (?)</title>
+  </programme>
+  <programme start="20151122163000 -0300" stop="20151122170000 -0300" channel="Metro">
+    <title lang="es">Universo deportivo (?)</title>
+    <desc lang="es">Programa de interés periodístico y deportivo en general, profesional y amateur, con entrevistas en el piso de primeras figuras del ámbito nacional e internacional(n)</desc>
+  </programme>
+  <programme start="20151122170000 -0300" stop="20151122173000 -0300" channel="Metro">
+    <title lang="es">Mira nos (?)</title>
+  </programme>
+  <programme start="20151122173000 -0300" stop="20151122180000 -0300" channel="Metro">
+    <title lang="es">Sin miedo (?)</title>
+    <desc lang="es">Un nuevo año del ciclo de Fanny Mandelbaum, con toda la calidez y el estilo periodístico que la distinguen. Invitados especiales, servicio, actualidad y todo lo que importa a los argentinos(n)</desc>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122190000 -0300" channel="Metro">
+    <title lang="es">Universidad crítica (?)</title>
+    <desc lang="es">Un debate con altura para reflexionar sobre los hechos sociales y políticos más relevantes de Argentina y el mundo, contando con la presencia de especialistas del ámbito de la política, la economía y la cultura.(n)</desc>
+  </programme>
+  <programme start="20151122190000 -0300" stop="20151122193000 -0300" channel="Metro">
+    <title lang="es">Autofans TV (?)</title>
+    <desc lang="es">Programa semanal dedicado a autos, motos y camiones. Lanzamientos, Road Test y todo lo relacionado al mercado automotor nacional e internacional(n)</desc>
+  </programme>
+  <programme start="20151122193000 -0300" stop="20151122200000 -0300" channel="Metro">
+    <title lang="es">Actualidad y psicoanálisis (?)</title>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122203000 -0300" channel="Metro">
+    <title lang="es">Agenda by Elsa Seveso (?)</title>
+  </programme>
+  <programme start="20151122203000 -0300" stop="20151122210000 -0300" channel="Metro">
+    <title lang="es">Contragolpe (?)</title>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122213000 -0300" channel="Metro">
+    <title lang="es">Reporte publicidad (?)</title>
+    <desc lang="es">Las ultimas novedades en el mundo de la publicidad y los mas creativos spot publicitarios del mundo(n)</desc>
+  </programme>
+  <programme start="20151122213000 -0300" stop="20151122220000 -0300" channel="Metro">
+    <title lang="es">Intimo y personal (?)</title>
+    <desc lang="es">Un periodista y un invitado. Una charla intima para conocer más sobre las historias de vida de personalidades de la política, del mundo profesional y empresarial(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122230000 -0300" channel="Metro">
+    <title lang="es">Pan y circo (?)</title>
+  </programme>
+  <programme start="20151122230000 -0300" stop="20151122233000 -0300" channel="Metro">
+    <title lang="es">Data (?)</title>
+  </programme>
+  <programme start="20151122233000 -0300" stop="20151123000000 -0300" channel="Metro">
+    <title lang="es">Bichos de campo (?)</title>
+    <desc lang="es">Programa sobre política agropecuaria(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122003000 -0300" channel="A 24">
+    <title lang="es">Andino y el país (?)</title>
+    <desc lang="es">Rescata el espíritu solidario, de quienes son capaces de brindar un esfuerzo por el otro. El lugar donde muchos encuentran un espacio para contar sus historias de ayuda al prójimo(n)</desc>
+  </programme>
+  <programme start="20151122003000 -0300" stop="20151122010000 -0300" channel="A 24">
+    <title lang="es">Infancias (?)</title>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122020000 -0300" channel="A 24">
+    <title lang="es">Pare de sufrir (?)</title>
+    <desc lang="es">Segmento conducido por pastores brasileños y argentinos que muestran testimonios de los adherentes a la Iglesia Universal del Reino de Dios(n)</desc>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122030000 -0300" channel="A 24">
+    <title lang="es">TeveCompras (?)</title>
+    <desc lang="es">En este programa informercial, se detalla el funcionamiento de cada uno de los productos que se encuentran a la venta de "Teve Compras", los cuales pueden ser adquiridos telefónicamente(n)</desc>
+  </programme>
+  <programme start="20151122030000 -0300" stop="20151122033000 -0300" channel="A 24">
+    <title lang="es">24 por segundo (?)</title>
+    <desc lang="es">Programa especialista en cine, viajamos por el mundo y tenemos los testimonios de los protagonistas del séptimo arte, informes especiales, novedades , estrenos. backstage(n)</desc>
+  </programme>
+  <programme start="20151122033000 -0300" stop="20151122040000 -0300" channel="A 24">
+    <title lang="es">Leo Paparella moda mix (?)</title>
+    <desc lang="es">En su programa, Leo Papparella nos presentará lo mejor de la moda. Veremos qué colores se vienen para la temporada primavera-verano, y, como nos tiene acostumbrados, disfrutaremos los mejores reportajes, portfolios y mucho más(n)</desc>
+  </programme>
+  <programme start="20151122040000 -0300" stop="20151122060000 -0300" channel="A 24">
+    <title lang="es">A24 a las 18 (?)</title>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122065000 -0300" channel="A 24">
+    <title lang="es">América noticias (?)</title>
+    <desc lang="es">Toda la actualidad, como cada día la información de la Argentina y del resto del mundo.  Móviles en vivo y todo lo que sucede al instante(n)</desc>
+  </programme>
+  <programme start="20151122065000 -0300" stop="20151122113000 -0300" channel="A 24">
+    <title lang="es">Vivo el sábado (?)</title>
+    <desc lang="es">Programa informativo para comenzar el fin de semana con el resumen de las noticias más importante de la semana que terminó(n)</desc>
+  </programme>
+  <programme start="20151122113000 -0300" stop="20151122120000 -0300" channel="A 24">
+    <title lang="es">Lo justo y necesario (?)</title>
+    <desc lang="es">Programa que brinda toda la información del ámbito social que involucra a nuestros jubilados y trabajadores mayores(n)</desc>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122130000 -0300" channel="A 24">
+    <title lang="es">El inversor (?)</title>
+    <desc lang="es">El inversor le acerca el análisis de la situación económica global y de las alternativas de inversión en Argentina y en los mercados internacionales. Además, alternativas y proyectos de inversión y desarrollo del mercado local de capitales(n)</desc>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122133000 -0300" channel="A 24">
+    <title lang="es">Mundo visual (?)</title>
+    <desc lang="es">Programa de turismo, realizado íntegramente en exteriores, que recorre el mundo y que enriquece sus contenidos con los bastos conocimientos que la conductora posee sobre turismo, hotelería y paseos(n)</desc>
+  </programme>
+  <programme start="20151122133000 -0300" stop="20151122140000 -0300" channel="A 24">
+    <title lang="es">Sin dolor (?)</title>
+    <desc lang="es">El Dr. Furman, junto a un grupo de especialistas, brindan todo su conocimientos y nos darán consejos para vivir mejor(n)</desc>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122170000 -0300" channel="A 24">
+    <title lang="es">Todo en uno (?)</title>
+    <desc lang="es">Resumen de las noticias de la semana, policiales, espectáculos y deportes. Además, invitados en vivo, videos increíbles y mucha diversión(n)</desc>
+  </programme>
+  <programme start="20151122170000 -0300" stop="20151122173000 -0300" channel="A 24">
+    <title lang="es">Hecho en Argentina (?)</title>
+    <desc lang="es">Ciclo documental que recorre el país mostrando su gente, su producción, la diversidad cultural y las bellezas naturales. Un viaje por las costumbres, historias y curiosidades poco conocidas de nuestra Argentina(n)</desc>
+  </programme>
+  <programme start="20151122173000 -0300" stop="20151122180000 -0300" channel="A 24">
+    <title lang="es">40 minutos (?)</title>
+    <desc lang="es">En cada emisión, se difundirán conceptos fundamentales de la responsabilidad social empresaria y las mejores prácticas en la materia. Mediante entrevistas a expertos se busca concientizar al público y lograr la reflexión solidaria(n)</desc>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122200000 -0300" channel="A 24">
+    <title lang="es">América noticias (?)</title>
+    <desc lang="es">Toda la actualidad, como cada día la información de la Argentina y del resto del mundo.  Móviles en vivo y todo lo que sucede al instante(n)</desc>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122203000 -0300" channel="A 24">
+    <title lang="es">Favaloro televisión (?)</title>
+    <desc lang="es">Cada programa está dedicado a un tema en especial: tabaquismo, estrés, alimentación, salud mental y sueño saludable son algunos de los capítulos que preparamos para ayudarte a estar mejor(n)</desc>
+  </programme>
+  <programme start="20151122203000 -0300" stop="20151122210000 -0300" channel="A 24">
+    <title lang="es">Curadores de arte (?)</title>
+    <desc lang="es">El programa presenta lo mejor del arte y el diseño, sus televidentes pueden disfrutar de las entrevistas de los conductores con artistas de envergadura en sus propios talleres en diálogos íntimos con diseñadores(n)</desc>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122220000 -0300" channel="A 24">
+    <title lang="es">Hecho en Argentina (?)</title>
+    <desc lang="es">Ciclo documental que recorre el país mostrando su gente, su producción, la diversidad cultural y las bellezas naturales. Un viaje por las costumbres, historias y curiosidades poco conocidas de nuestra Argentina(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122230000 -0300" channel="A 24">
+    <title lang="es">Como hacen los que hacen (?)</title>
+    <desc lang="es">Natali, Antonela y Juani te van a hacer vivir una hora increíble, en la que vas a conocer cómo se hacen algunas cosas en nuestro país(n)</desc>
+  </programme>
+  <programme start="20151122230000 -0300" stop="20151123000000 -0300" channel="A 24">
+    <title lang="es">Boca es Boca (?)</title>
+    <desc lang="es">Dedicado integramente al Club Atlético Boca Juniors. tiene una estructura de montaje ágil y dinámica, sustentada por contenido generado con cámaras propias que registran todo el acontecer del club(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122010000 -0300" channel="C5N">
+    <title lang="es">Stalkers (?)</title>
+    <desc lang="es">Un programa en donde Diego Poggi repasará las noticias más importantes y divertidas de la semana, con el lenguaje de las redes sociales, videos virales, invitados y una interacción en tiempo real con los televidentes(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122060000 -0300" channel="C5N">
+    <title lang="es">De 1 a 5 (?)</title>
+    <desc lang="es">Un resumen diario con toda la actualidad, humor, música y entrevistas. Un programa joven e interactivo(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122100000 -0300" channel="C5N">
+    <title lang="es">Bien temprano (?)</title>
+    <desc lang="es">Las noticias más destacadas de la jornada, las tapas de los diarios y los adelantos del día que comienza(n)</desc>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122133000 -0300" channel="C5N">
+    <title lang="es">El finde (?)</title>
+  </programme>
+  <programme start="20151122133000 -0300" stop="20151122140000 -0300" channel="C5N">
+    <title lang="es">Autos en vivo (?)</title>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122180000 -0300" channel="C5N">
+    <title lang="es">Viva la tarde (?)</title>
+    <desc lang="es">En este programa descubre con Carlos Calero lo que hay más allá de la pantalla. Disfruta los mejores momentos de las producciones de nuestros canales "Mundo Fox", NTN24, "Nuestra Tele" y "Win Sports"(n)</desc>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122210000 -0300" channel="C5N">
+    <title lang="es">Remix de noticias (?)</title>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122213000 -0300" channel="C5N">
+    <title lang="es">Road Music (?)</title>
+  </programme>
+  <programme start="20151122213000 -0300" stop="20151122220000 -0300" channel="C5N">
+    <title lang="es">Alerta verde (?)</title>
+    <desc lang="es">"Alerta verde" difunde temas relacionados con el entorno y la ecología, teniendo como máximo objetivo generar conciencia, informar y defender al medio ambiente(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122233000 -0300" channel="C5N">
+    <title lang="es">¿Quién dijo que es tarde? (?)</title>
+  </programme>
+  <programme start="20151122233000 -0300" stop="20151123000000 -0300" channel="C5N">
+    <title lang="es">Vale acústico (?)</title>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122120000 -0300" channel="Crónica TV">
+    <title lang="es">Noticias (?)</title>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151123000000 -0300" channel="Crónica TV">
+    <title lang="es">Noticias (?)</title>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122001500 -0300" channel="26 TV">
+    <title lang="es">Vivo a la medianoche (?)</title>
+    <desc lang="es">Noticiero(n)</desc>
+  </programme>
+  <programme start="20151122001500 -0300" stop="20151122010000 -0300" channel="26 TV">
+    <title lang="es">Peatonal (?)</title>
+    <desc lang="es">Peatonal es un lugar de encuentro donde tocamos diferentes tópicos, charlamos con amigos y recibimos invitados. Vamos a reírnos y divertirnos, vamos a jugar con el invitado, nos vamos a informar pero sobre todo nos vamos a distender(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122013000 -0300" channel="26 TV">
+    <title lang="es">Destino Neuquén (?)</title>
+    <desc lang="es">Magazine semanal que muestra los hermosos paisajes, la gente, los sabores y opciones para disfrutar todo lo que tiene para ofrecer la provincia argentina de Neuquén(n)</desc>
+  </programme>
+  <programme start="20151122013000 -0300" stop="20151122023000 -0300" channel="26 TV">
+    <title lang="es">Mix 26 (?)</title>
+    <desc lang="es">Magazine de variedades con la conducción de Federico Juanto(n)</desc>
+  </programme>
+  <programme start="20151122023000 -0300" stop="20151122033000 -0300" channel="26 TV">
+    <title lang="es">¿Qué hacemos con los pesos? (?)</title>
+    <desc lang="es">Mariano Otálora y un equipo de especialistas te ayuda a que puedas tomar las mejores decisiones con tu dinero(n)</desc>
+  </programme>
+  <programme start="20151122033000 -0300" stop="20151122043000 -0300" channel="26 TV">
+    <title lang="es">Plan M (?)</title>
+    <desc lang="es">Maxi Montenegro te lleva cada noche a tu casa el mejor análisis de la información del día y te brinda la posibilidad de escuchar a los principales actores de la vida política, social y económica del país(n)</desc>
+  </programme>
+  <programme start="20151122043000 -0300" stop="20151122060000 -0300" channel="26 TV">
+    <title lang="es">En linea (?)</title>
+    <desc lang="es">En linea con Martín Liberman es un programa diario de actualidad, entretenido, descontracturado y comprometido(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122070000 -0300" channel="26 TV">
+    <title lang="es">Informe especial 26 (?)</title>
+    <desc lang="es">Ciclo de casos policiales con información, testimonios y el análisis de destacados especialistas(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122100000 -0300" channel="26 TV">
+    <title lang="es">26 al amanecer (?)</title>
+    <desc lang="es">Noticiero que te acerca toda la información desde bien temprano(n)</desc>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122120000 -0300" channel="26 TV">
+    <title lang="es">El diario del sábado (?)</title>
+    <desc lang="es">Información en movimiento y sin pálidas(n)</desc>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122130000 -0300" channel="26 TV">
+    <title lang="es">26 al mediodía (?)</title>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122140000 -0300" channel="26 TV">
+    <title lang="es">A todo motor (?)</title>
+    <desc lang="es">Rubén Daray nos muestra los salones de autos más importantes y toda la industria con los nuevos modelos y los próximos lanzamientos(n)</desc>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122150000 -0300" channel="26 TV">
+    <title lang="es">26 espectáculos (?)</title>
+    <desc lang="es">Resumen semanal con las noticias y entrevistas del espectáculo más destacadas de la semana(n)</desc>
+  </programme>
+  <programme start="20151122150000 -0300" stop="20151122153000 -0300" channel="26 TV">
+    <title lang="es">Informe especial 26 (?)</title>
+    <desc lang="es">Ciclo de casos policiales con información, testimonios y el análisis de destacados especialistas(n)</desc>
+  </programme>
+  <programme start="20151122153000 -0300" stop="20151122160000 -0300" channel="26 TV">
+    <title lang="es">26 Música (?)</title>
+  </programme>
+  <programme start="20151122160000 -0300" stop="20151122163000 -0300" channel="26 TV">
+    <title lang="es">Informe especial 26 (?)</title>
+    <desc lang="es">Ciclo de casos policiales con información, testimonios y el análisis de destacados especialistas(n)</desc>
+  </programme>
+  <programme start="20151122163000 -0300" stop="20151122170000 -0300" channel="26 TV">
+    <title lang="es">26 Música (?)</title>
+  </programme>
+  <programme start="20151122170000 -0300" stop="20151122173000 -0300" channel="26 TV">
+    <title lang="es">Informe especial 26 (?)</title>
+    <desc lang="es">Ciclo de casos policiales con información, testimonios y el análisis de destacados especialistas(n)</desc>
+  </programme>
+  <programme start="20151122173000 -0300" stop="20151122180000 -0300" channel="26 TV">
+    <title lang="es">Informe especial 26 (?)</title>
+    <desc lang="es">Ciclo de casos policiales con información, testimonios y el análisis de destacados especialistas(n)</desc>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122200000 -0300" channel="26 TV">
+    <title lang="es">26 a la tarde (?)</title>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122210000 -0300" channel="26 TV">
+    <title lang="es">Chiche en vivo (?)</title>
+    <desc lang="es">Políticos, artistas, deportistas y ciudadanos comunes comparten sus experiencias para aportar una nueva visión a las problemáticas que aquejan a la sociedad(n)</desc>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122220000 -0300" channel="26 TV">
+    <title lang="es">Las imagenes más espectaculares (?)</title>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122230000 -0300" channel="26 TV">
+    <title lang="es">Folclorísimo (?)</title>
+    <desc lang="es">Un recorrido diario por las raíces de la música folklórica con la conducción de uno de los grandes difusores de ese género musical en nuestro país: Carlos Giachetti(n)</desc>
+  </programme>
+  <programme start="20151122230000 -0300" stop="20151123000000 -0300" channel="26 TV">
+    <title lang="es">Johnny Allon Max (?)</title>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122010000 -0300" channel="Todo Noticias">
+    <title lang="es">La viola en concierto (?)</title>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122020000 -0300" channel="Todo Noticias">
+    <title lang="es">David y Goliat (?)</title>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122030000 -0300" channel="Todo Noticias">
+    <title lang="es">En el camino (?)</title>
+  </programme>
+  <programme start="20151122030000 -0300" stop="20151122040000 -0300" channel="Todo Noticias">
+    <title lang="es">La viola en concierto (?)</title>
+  </programme>
+  <programme start="20151122040000 -0300" stop="20151122043000 -0300" channel="Todo Noticias">
+    <title lang="es">TN Extremo (?)</title>
+  </programme>
+  <programme start="20151122043000 -0300" stop="20151122050000 -0300" channel="Todo Noticias">
+    <title lang="es">Varieté (?)</title>
+    <desc lang="es">Una cámara viajera se mete en la intimidad de los pueblos y colectividades para descubrir cómo viven, cómo piensan y cómo sienten. El relato nos lleva a entender que Argentina tiene lugares, costumbres y personajes que nunca imaginamos(n)</desc>
+  </programme>
+  <programme start="20151122050000 -0300" stop="20151122053000 -0300" channel="Todo Noticias">
+    <title lang="es">TN Tecno (?)</title>
+  </programme>
+  <programme start="20151122053000 -0300" stop="20151122060000 -0300" channel="Todo Noticias">
+    <title lang="es">TN Extremo (?)</title>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122070000 -0300" channel="Todo Noticias">
+    <title lang="es">David y Goliat (?)</title>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122130000 -0300" channel="Todo Noticias">
+    <title lang="es">TN Sábado a la mañana (?)</title>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122140000 -0300" channel="Todo Noticias">
+    <title lang="es">TN Deportivo a las 13 (?)</title>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122143000 -0300" channel="Todo Noticias">
+    <title lang="es">TN Internacional (?)</title>
+    <desc lang="es">La información deja de tener fronteras con TN Internacional, un formato renovado para mostrarte todo lo que pasa en el mundo y su impacto en nuestro país(n)</desc>
+  </programme>
+  <programme start="20151122143000 -0300" stop="20151122150000 -0300" channel="Todo Noticias">
+    <title lang="es">Esta es mi villa (?)</title>
+  </programme>
+  <programme start="20151122150000 -0300" stop="20151122170000 -0300" channel="Todo Noticias">
+    <title lang="es">Cámara del crimen (?)</title>
+  </programme>
+  <programme start="20151122170000 -0300" stop="20151122173000 -0300" channel="Todo Noticias">
+    <title lang="es">TN Tecno (?)</title>
+  </programme>
+  <programme start="20151122173000 -0300" stop="20151122190000 -0300" channel="Todo Noticias">
+    <title lang="es">TN Sábado a la tarde (?)</title>
+  </programme>
+  <programme start="20151122190000 -0300" stop="20151122200000 -0300" channel="Todo Noticias">
+    <title lang="es">En el camino (?)</title>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122220000 -0300" channel="Todo Noticias">
+    <title lang="es">TN Sábado a la noche (?)</title>
+    <desc lang="es">Todos los sucesos actuales de política, clima, negocios, análisis y los últimos acontecimientos(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122223000 -0300" channel="Todo Noticias">
+    <title lang="es">TN autos (?)</title>
+  </programme>
+  <programme start="20151122223000 -0300" stop="20151122230000 -0300" channel="Todo Noticias">
+    <title lang="es">Varieté (?)</title>
+    <desc lang="es">Una cámara viajera se mete en la intimidad de los pueblos y colectividades para descubrir cómo viven, cómo piensan y cómo sienten. El relato nos lleva a entender que Argentina tiene lugares, costumbres y personajes que nunca imaginamos(n)</desc>
+  </programme>
+  <programme start="20151122230000 -0300" stop="20151123000000 -0300" channel="Todo Noticias">
+    <title lang="es">Sin estribos (?)</title>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122010000 -0300" channel="América 2">
+    <title lang="es">Animales sueltos (?)</title>
+    <desc lang="es">El ciclo repasará cada noche la actualidad con informes e invitados especiales, abordados con el humor y la picardía que los caracterizan, pero incorporando nuevos personajes a su staff que le sumarán su particular visión(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122020000 -0300" channel="América 2">
+    <title lang="es">Pare de sufrir (?)</title>
+    <desc lang="es">Segmento conducido por pastores brasileños y argentinos que muestran testimonios de los adherentes a la Iglesia Universal del Reino de Dios(n)</desc>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122043000 -0300" channel="América 2">
+    <title lang="es">Intrusos en el espectáculo (?)</title>
+    <desc lang="es">El clásico programa de espectáculos que pone en la mira a la farándula nacional e internacional. Invitados en vivo y mesas de debate sobre los temas más candentes del día son parte de lo que acerca 'Intrusos' diariamente(n)</desc>
+  </programme>
+  <programme start="20151122043000 -0300" stop="20151122060000 -0300" channel="América 2">
+    <title lang="es">Infama (?)</title>
+    <desc lang="es">"Infama", el lado B de los famosos,  se mete en la intimidad del espectáculo(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122063000 -0300" channel="América 2">
+    <title lang="es">TeveCompras (?)</title>
+    <desc lang="es">En este programa informercial, se detalla el funcionamiento de cada uno de los productos que se encuentran a la venta de "Teve Compras", los cuales pueden ser adquiridos telefónicamente(n)</desc>
+  </programme>
+  <programme start="20151122063000 -0300" stop="20151122070000 -0300" channel="América 2">
+    <title lang="es">Fitness y belleza (?)</title>
+    <desc lang="es">El programa abarca una temática actual referida al mundo de la salud y la estética personal(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122073000 -0300" channel="América 2">
+    <title lang="es">Pare de sufrir (?)</title>
+    <desc lang="es">Segmento conducido por pastores brasileños y argentinos que muestran testimonios de los adherentes a la Iglesia Universal del Reino de Dios(n)</desc>
+  </programme>
+  <programme start="20151122073000 -0300" stop="20151122090000 -0300" channel="América 2">
+    <title lang="es">TeveCompras (?)</title>
+    <desc lang="es">En este programa informercial, se detalla el funcionamiento de cada uno de los productos que se encuentran a la venta de "Teve Compras", los cuales pueden ser adquiridos telefónicamente(n)</desc>
+  </programme>
+  <programme start="20151122090000 -0300" stop="20151122110000 -0300" channel="América 2">
+    <title lang="es">Intrépidos (?)</title>
+    <desc lang="es">Intrépidos trae toda la información de tecnología, música, videoclips, los secretos del  mundo de la farándula adolescente, entretenimiento, lo más visto en la web,  secciones de moda,  espectáculos y deportes extremos(n)</desc>
+  </programme>
+  <programme start="20151122110000 -0300" stop="20151122120000 -0300" channel="América 2">
+    <title lang="es">Puentes de esperanza (?)</title>
+    <desc lang="es">Programa que te invita a un recorrido especial por Argentina, cautivándonos con historias inspiradoras y ejemplares por la pasión y el corazón que le ponen los hombres y mujeres protagonistas(n)</desc>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122180000 -0300" channel="América 2">
+    <title lang="es">Pasión de sábado (?)</title>
+    <desc lang="es">El programa que reúne cada sábado a las mejores bandas del momento, invitándote a que te diviertas, bailes y rías al mejor estilo tropical(n)</desc>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122200000 -0300" channel="América 2">
+    <title lang="es">América noticias (?)</title>
+    <desc lang="es">Toda la actualidad, como cada día la información de la Argentina y del resto del mundo.  Móviles en vivo y todo lo que sucede al instante(n)</desc>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122223000 -0300" channel="América 2">
+    <title lang="es">Secretos verdaderos (?)</title>
+    <desc lang="es">Las biografías no autorizadas de las máximas figuras del espectáculo, como nadie se animo a contar(n)</desc>
+  </programme>
+  <programme start="20151122223000 -0300" stop="20151123000000 -0300" channel="América 2">
+    <title lang="es">El show del fútbol (?)</title>
+    <desc lang="es">El resumen de la fecha, el análisis más completo de las jugadas y todo lo ocurrido en el torneo de la máxima categoría del fútbol argentino. Destacados periodistas, debate y opinión calificada(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122003000 -0300" channel="Telefe">
+    <title lang="es">U-Play, ya nada será igual (?)</title>
+    <desc lang="es">El programa que muestra los videos más divertidos e increíbles de internet, con todo el humor y la mejor onda antes de que termine el día(n)</desc>
+  </programme>
+  <programme start="20151122003000 -0300" stop="20151122010000 -0300" channel="Telefe">
+    <title lang="es">Diario de medianoche (?)</title>
+    <desc lang="es">Una propuesta informativa amena y ágil para estar informado y distenderse, con  el resumen de la jornada nacional e internacional y todo lo que se necesita saber para terminar bien el día y prepararse para empezar uno nuevo(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122080000 -0300" channel="Telefe">
+    <title lang="es">Fin de transmisión (?)</title>
+  </programme>
+  <programme start="20151122080000 -0300" stop="20151122100000 -0300" channel="Telefe">
+    <title lang="es">Discovery Kids (?)</title>
+    <desc lang="es">Para acompañar a los más chicos y divertirse junto a nuevos amigos: Peppa, la cerdita, junto a toda su familia; el aventurero Doki y sus amigos exploradores; El mundo de Luna con toda su curiosidad, y muchos personajes más(n)</desc>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122103000 -0300" channel="Telefe">
+    <title lang="es">Los creadores (?)</title>
+    <desc lang="es">Dos científicos, el Dr. Testa y el profesor Ricky Flex, construyeron la Nubesfera, un portal a una dimensión virtual llamada Creápolis. En el mundo de los creadores, un grupo de jóvenes buscan resolver problemas con su imaginación(n)</desc>
+  </programme>
+  <programme start="20151122103000 -0300" stop="20151122120000 -0300" channel="Telefe">
+    <title lang="es">Cine (?)</title>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122191500 -0300" channel="Telefe">
+    <title lang="es">Los Simpson (?)</title>
+    <desc lang="es">Los Simpson es una comedia situacional animada que trata sobre la vida de las familias norteamericanas de clase media y sus conductas sociales(n)</desc>
+  </programme>
+  <programme start="20151122191500 -0300" stop="20151122223000 -0300" channel="Telefe">
+    <title lang="es">Escape perfecto (?)</title>
+    <desc lang="es">Un programa que une el entretenimiento, el desafío físico y el conocimiento. Cada vez que una pareja participa de Escape perfecto, contará con la posibilidad de llevarse $1.000.000 en premios(n)</desc>
+  </programme>
+  <programme start="20151122223000 -0300" stop="20151123000000 -0300" channel="Telefe">
+    <title lang="es">Laten corazones - La gala (?)</title>
+    <desc lang="es">Las familias deberán conmover al público para que se levante de sus asientos y de esta manera llevarse el premio mayor, $50.000(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122003000 -0300" channel="Tv Pública">
+    <title lang="es">Tango pasión Argentina (?)</title>
+    <desc lang="es">En cada capítulo se aborda una temática particular referida a la música del Río de la Plata. Desde los orígenes hasta la actualidad, pasando por las figuras y los hitos más destacados(n)</desc>
+  </programme>
+  <programme start="20151122003000 -0300" stop="20151122010000 -0300" channel="Tv Pública">
+    <title lang="es">Visión 7 - Resumen (?)</title>
+    <desc lang="es">Un envío dinámico y descontracturado con toda la información que hay que saber para el cierre del día(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122020000 -0300" channel="Tv Pública">
+    <title lang="es">Otra trama (?)</title>
+    <desc lang="es">Osvaldo Quiroga presenta un programa periodístico dedicado a la cultura. Un paseo por la literatura, el teatro y las artes plásticas(n)</desc>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122053000 -0300" channel="Tv Pública">
+    <title lang="es">Cine para todos (?)</title>
+    <desc lang="es">El mejor cine norteamericano de colección. Casablanca, El Bufón del Rey, Gilda, El Halcón Maltés, son algunas de las joyas de este cine para recordar(n)</desc>
+  </programme>
+  <programme start="20151122053000 -0300" stop="20151122060000 -0300" channel="Tv Pública">
+    <title lang="es">6 7 8 (?)</title>
+    <desc lang="es">El programa es un espacio de reflexión sobre el modo en que los medios representan la realidad. Presenta informes especiales con material de archivo, invitados y debates(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122070000 -0300" channel="Tv Pública">
+    <title lang="es">Pampero TV (?)</title>
+    <desc lang="es">Pampero TV el primer programa agropecuario del país coproducido por el INTA (Instituto Nacional de Tecnología Agropecuaria) y el Canal 12 de Trenque Lauquen(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122073000 -0300" channel="Tv Pública">
+    <title lang="es">Caminos de tiza (?)</title>
+    <desc lang="es">Caminos de tiza, es considerado por los docentes como un programa de capacitación y de intercambio de contenidos y novedades educativas y es -además- de interés para toda la comunidad educativa(n)</desc>
+  </programme>
+  <programme start="20151122073000 -0300" stop="20151122080000 -0300" channel="Tv Pública">
+    <title lang="es">Ejército argentino (?)</title>
+    <desc lang="es">El programa difunde cada semana las principales actividades que desarrollan los integrantes del Ejército Argentino en la variada geografía de nuestro país(n)</desc>
+  </programme>
+  <programme start="20151122080000 -0300" stop="20151122090000 -0300" channel="Tv Pública">
+    <title lang="es">Los siete locos (?)</title>
+    <desc lang="es">Un programa de crítica literaria, con entrevistas a escritores argentinos. Un diálogo enriquecedor con las más grandes figuras del mundo literario de nuestro tiempo(n)</desc>
+  </programme>
+  <programme start="20151122090000 -0300" stop="20151122093000 -0300" channel="Tv Pública">
+    <title lang="es">Madres de la Plaza (?)</title>
+    <desc lang="es">En este micro las Madres de Plaza de Mayo compartirán sus reflexiones, puntos de vista y el análisis de la historia y la actualidad, tanto nacional como latinoamericana(n)</desc>
+  </programme>
+  <programme start="20151122093000 -0300" stop="20151122103000 -0300" channel="Tv Pública">
+    <title lang="es">Pakapaka (?)</title>
+    <desc lang="es">Pakapaka es una franja infantil especialmente pensada y diseñada para chicas y chicos de todo el país, de entre siete y once años. Un espacio para que ellos se reconozcan, se diviertan y se animen a aprender y a descubrir(n)</desc>
+  </programme>
+  <programme start="20151122103000 -0300" stop="20151122113000 -0300" channel="Tv Pública">
+    <title lang="es">Desde la vida (?)</title>
+    <desc lang="es">El programa apunta a generar conciencia sobre la importancia de valorar y respetar a las personas por su diversidad y promover la aceptación para la integración plena de personas con discapacidad(n)</desc>
+  </programme>
+  <programme start="20151122113000 -0300" stop="20151122123000 -0300" channel="Tv Pública">
+    <title lang="es">Científicos Industria Argentina (?)</title>
+    <desc lang="es">Adrián Paenza y un equipo de científicos acercan temas e historias que involucran la tarea diaria de los investigadores, sus descubrimientos, motivaciones y cómo afecta lo que hacen en la calidad de vida de las personas(n)</desc>
+  </programme>
+  <programme start="20151122123000 -0300" stop="20151122133000 -0300" channel="Tv Pública">
+    <title lang="es">Visión 7 Internacional (?)</title>
+    <desc lang="es">Los principales acontecimientos de la semana en el orden internacional, recordatorios de fechas y personalidades claves e informes didácticos(n)</desc>
+  </programme>
+  <programme start="20151122133000 -0300" stop="20151122140000 -0300" channel="Tv Pública">
+    <title lang="es">El informe Kliksberg (?)</title>
+    <desc lang="es">Las principales problemáticas del mundo actual a la luz de dos de los capitales más urgentes de la humanidad: la ética y la solidaridad. Una mirada estadística y positiva para conocer soluciones posibles(n)</desc>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122173000 -0300" channel="Tv Pública">
+    <title lang="es">Documentales en la TV Pública (?)</title>
+    <desc lang="es">Con criterio de calidad y equilibrio entre información, formación y entretenimiento, la TV Pública presenta ciclos documentales dedicados a distintas esferas del conocimiento(n)</desc>
+  </programme>
+  <programme start="20151122173000 -0300" stop="20151122193000 -0300" channel="Tv Pública">
+    <title lang="es">Rebelión en los Llanos. Vida, resistencia y muerte (?)</title>
+    <desc lang="es">Superproducción filmada en los escenarios naturales de La Rioja, que recrea la historia, la figura y los últimos años de lucha del caudillo Vicente "El Chacho" Peñaloza(n)</desc>
+  </programme>
+  <programme start="20151122193000 -0300" stop="20151122201500 -0300" channel="Tv Pública">
+    <title lang="es">Visión 7 - Sábado (?)</title>
+    <desc lang="es">El noticiero de la TV Pública informa, investiga, analiza, entrevista y debate sobre la diversidad de los temas y de las culturas. Propone amplia cobertura, óptica independiente y agenda propia sobre hechos y protagonistas trascendentes(n)</desc>
+  </programme>
+  <programme start="20151122201500 -0300" stop="20151122210000 -0300" channel="Tv Pública">
+    <title lang="es">Atlántico Sur (?)</title>
+    <desc lang="es">Documental grabado a lo largo de toda la costa argentina que presenta el más extensivo e inédito registro de los ecosistemas marinos(n)</desc>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122220000 -0300" channel="Tv Pública">
+    <title lang="es">Crónicas de un mundo en conflicto (?)</title>
+    <desc lang="es">Programa periodístico que muestra, como nunca antes y en exclusivo, adversidades que diferentes regiones del mundo deben atravesar. Nos invita a adentrarnos a realidades de países que parecen estar alejados, aunque no lo estén(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122231500 -0300" channel="Tv Pública">
+    <title lang="es">Cine para todos (?)</title>
+    <desc lang="es">El mejor cine norteamericano de colección. Casablanca, El Bufón del Rey, Gilda, El Halcón Maltés, son algunas de las joyas de este cine para recordar(n)</desc>
+  </programme>
+  <programme start="20151122231500 -0300" stop="20151123000000 -0300" channel="Tv Pública">
+    <title lang="es">Cromo (?)</title>
+    <desc lang="es">Una científica muere en extrañas circunstancias mientras realiza una investigación en torno a una curtiembre. Su marido y su mejor amigo viajan al lugar para descubrir qué fue lo que pasó, y terminan poniendo en riesgo sus propias vidas(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122001500 -0300" channel="Canal 13">
+    <title lang="es">Showmatch (?)</title>
+    <desc lang="es">Nueva temporada del mega show conducido por Marcelo Tinelli. Con el popular segmento "Bailando por un sueño". Una producción de Ideas del Sur(n)</desc>
+  </programme>
+  <programme start="20151122001500 -0300" stop="20151122004500 -0300" channel="Canal 13">
+    <title lang="es">En síntesis (?)</title>
+    <desc lang="es">La historia del día, el resumen de noticias de la jornada y del mundo deportivo. Se desarrollan los temas más importantes del día de manera ágil y clara(n)</desc>
+  </programme>
+  <programme start="20151122004500 -0300" stop="20151122010000 -0300" channel="Canal 13">
+    <title lang="es">Noches Fashion TV (?)</title>
+    <desc lang="es">Ciclo que presenta las tendencias más vanguardistas en cuanto a moda, diseño, gastronomía, belleza, tecnología y viajes. Los eventos más destacados y las actividades y obras de prestigiosos artistas que triunfan en todo el mundo(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122083000 -0300" channel="Canal 13">
+    <title lang="es">Fin de transmisión (?)</title>
+  </programme>
+  <programme start="20151122083000 -0300" stop="20151122084500 -0300" channel="Canal 13">
+    <title lang="es">Gaturro, la serie (?)</title>
+    <desc lang="es">La historia del gato más tierno y simpático, que no para de hacer travesuras junto a sus amigos(n)</desc>
+  </programme>
+  <programme start="20151122084500 -0300" stop="20151122093000 -0300" channel="Canal 13">
+    <title lang="es">Panam y circo (?)</title>
+    <desc lang="es">El mundo infantil en el marco de un universo en el cual la fantasía es la premisa. Una propuesta en la que la música, el color y la alegría son las apuestas para lograr que los pequeños adquieran conocimientos a la vez que se entretienen(n)</desc>
+  </programme>
+  <programme start="20151122093000 -0300" stop="20151122100000 -0300" channel="Canal 13">
+    <title lang="es">Piñón en familia (?)</title>
+    <desc lang="es">Piñón Fijo es el encargado de alegrarte las mañanas. Con su simpatía y con la magia de sus canciones, este divertido payaso te invita a que lo acompañes y te animes vos también a cantar(n)</desc>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122130000 -0300" channel="Canal 13">
+    <title lang="es">Carburando (?)</title>
+    <desc lang="es">En casa vivís los fierros como en ningún otro lugar. Y hasta se ven mejor que en el autódromo gracias a todas las cámaras que utiliza Carburando en cada transmisión. Tenés Turismo Carretera, TC2000, Top Race y Turismo Nacional(n)</desc>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122203000 -0300" channel="Canal 13">
+    <title lang="es">Cine Trece (?)</title>
+    <desc lang="es">Un lugar privilegiado para disfrutar tus películas preferidas(n)</desc>
+  </programme>
+  <programme start="20151122203000 -0300" stop="20151122220000 -0300" channel="Canal 13">
+    <title lang="es">Como anillo al dedo (?)</title>
+    <desc lang="es">Tres parejas de famosos se enfrentan en una competencia por un OKM, donde deberán sortear diferentes tipos de juegos: algunos de ingenio, otros de memoria y otros donde tienen que demostrar su talento y destreza(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151123000000 -0300" channel="Canal 13">
+    <title lang="es">La noche de Mirtha (?)</title>
+    <desc lang="es">Un nuevo espacio para mantener conversaciones distendidas con personajes destacados de la política, el espectáculo, la música y el deporte, en un marco pleno de elegancia y distinción, sello indiscutible de Mirtha(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122003000 -0300" channel="Canal 9">
+    <title lang="es">Duro de domar (?)</title>
+    <desc lang="es">El ciclo mostrará la actualidad pasando fragmentos de otros programas, poniéndole color a las noticias del día con el toque de humor que caracteriza al programa(n)</desc>
+  </programme>
+  <programme start="20151122003000 -0300" stop="20151122010000 -0300" channel="Canal 9">
+    <title lang="es">Telenueve tercera edición (?)</title>
+    <desc lang="es">Última emisión del noticiero de Canal 9. Con móviles, comentaristas y la información nacional e internacional completa y actualizada(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122013000 -0300" channel="Canal 9">
+    <title lang="es">Hora de reir (?)</title>
+    <desc lang="es">Una hora con todo el stand up y los más destacados humoristas para empezar la semana con la mejor energía(n)</desc>
+  </programme>
+  <programme start="20151122013000 -0300" stop="20151122020000 -0300" channel="Canal 9">
+    <title lang="es">Congreso para el progreso (?)</title>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122023000 -0300" channel="Canal 9">
+    <title lang="es">La última piedra (?)</title>
+    <desc lang="es">Segmento conducido por pastores brasileños y argentinos que muestran testimonios de los adherentes a la Iglesia Universal del Reino de Dios(n)</desc>
+  </programme>
+  <programme start="20151122023000 -0300" stop="20151122040000 -0300" channel="Canal 9">
+    <title lang="es">Bendita (?)</title>
+    <desc lang="es">El programa intentará no sólo entretener sino hacer pensar y debatir al televidente, a través de informes, invitados especiales y los distintos puntos de vista del conductor y sus panelistas(n)</desc>
+  </programme>
+  <programme start="20151122040000 -0300" stop="20151122060000 -0300" channel="Canal 9">
+    <title lang="es">Que mañana! (?)</title>
+    <desc lang="es">Un magazine de tono informal con variedad de secciones: actualidad, servicios, espectáculos, humor, deporte, tecnología, moda, música en vivo e invitados diarios(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122070000 -0300" channel="Canal 9">
+    <title lang="es">Pinky Dinky Doo (?)</title>
+    <desc lang="es">Trata acerca de los Doos, una familia que vive en una gran ciudad y especialmente, acerca de Pinky Dinky Doo, una niña de siete años, su hermano de cuatro años, Tyler  y un conejillo de Indias(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122073000 -0300" channel="Canal 9">
+    <title lang="es">Master Raindrop (?)</title>
+    <desc lang="es">Maetro Raindrop sigue al novato en artes marciales Raindrop y su amiga Shao Yen en su viaje. Ellos buscan salvar a su Maestro Yun y eventualmente a su pacífica tierra del malvado General Bu y su ejército de Guerreros Terracota(n)</desc>
+  </programme>
+  <programme start="20151122073000 -0300" stop="20151122080000 -0300" channel="Canal 9">
+    <title lang="es">3, 2, 1 ¡Vamos! (?)</title>
+    <desc lang="es">Esta popular serie reúne a algunos de los personajes más queridos del mundo de Plaza Sésamo. Cada episodio de media hora incluye segmentos de Juega Conmigo Sésamo y El Mundo de Archibaldo(n)</desc>
+  </programme>
+  <programme start="20151122080000 -0300" stop="20151122083000 -0300" channel="Canal 9">
+    <title lang="es">Naruto (?)</title>
+    <desc lang="es">Naruto quiere ser el mejor ninja que nunca haya existido pero primero tendrá que graduarse de la academia de ninjas, una tarea difícil para un chico que prefiere estar haciendo bromas todo el día(n)</desc>
+  </programme>
+  <programme start="20151122083000 -0300" stop="20151122090000 -0300" channel="Canal 9">
+    <title lang="es">Iron Kids (?)</title>
+    <desc lang="es">La historia se centra en Marty, un niño excavador de piezas de robot para luego venderlas. Un día, el descubrió el Puño de Eon, que luego de cobrar vida, se inserta en el brazo de Marty(n)</desc>
+  </programme>
+  <programme start="20151122090000 -0300" stop="20151122100000 -0300" channel="Canal 9">
+    <title lang="es">Claves para un mundo mejor (?)</title>
+    <desc lang="es">Desde hace 26 años, “CLAVES” con un enfoque esperanzador y solidario de la realidad actual, es el primer y único noticiero de buenas noticias destinadas a mostrar gestos de gente comprometida(n)</desc>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122113000 -0300" channel="Canal 9">
+    <title lang="es">Caramelito, siempre con vos (?)</title>
+    <desc lang="es">Programa dirigido a los más pequeños en el que habrá canciones, coreografías y sketchs. Cuenta además con distintos espacios como "El rincón del tallercito" donde se enseñan manualidades, se cuentan cuentos y dan consejos ecológicos(n)</desc>
+  </programme>
+  <programme start="20151122113000 -0300" stop="20151122120000 -0300" channel="Canal 9">
+    <title lang="es">El Chapulín colorado (?)</title>
+    <desc lang="es">Es un héroe cobarde con poderes especiales que combate el mal y acude cuando alguien necesita que lo ayude. Usa diferentes armas para combatir el crimen como las pastillas de chiquitolina o el chipote chillón(n)</desc>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122130000 -0300" channel="Canal 9">
+    <title lang="es">Argentina por argentinos (?)</title>
+    <desc lang="es">Argentina por Argentinos es el programa de turismo que recorre el país, donde los verdaderos protagonistas son los habitantes del mismo(n)</desc>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122140000 -0300" channel="Canal 9">
+    <title lang="es">Jineteando (?)</title>
+    <desc lang="es">Reencontrate con las cosas nuestras, rescatando nuestros valores y tradiciones. Y además podrás disfrutar de las mayores bellezas turísticas en la recorrida que realizamos por todo el país(n)</desc>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122160000 -0300" channel="Canal 9">
+    <title lang="es">El Chavo (?)</title>
+    <desc lang="es">La serie se centra en el Chavo, un niño que vive en una vecindad. En cada alocado episodio, el chavo es acompañado por La chilindrina, Quico, Don Ramón, la bruja del 71, Doña Florinda, el profesor Jirafales y Ñoño(n)</desc>
+  </programme>
+  <programme start="20151122160000 -0300" stop="20151122180000 -0300" channel="Canal 9">
+    <title lang="es">Cine (?)</title>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122200000 -0300" channel="Canal 9">
+    <title lang="es">Implacables (?)</title>
+    <desc lang="es">Conoceremos todas las novedades sobre el mundo del espectáculo(n)</desc>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122220000 -0300" channel="Canal 9">
+    <title lang="es">Tu mejor sábado (?)</title>
+    <desc lang="es">Vas a disfrutar del show más sorprendente, los juegos más cautivantes  y todo el entretenimiento. Tu mejor sábado llega  con  dos secciones sorprendentes: "Me juego  el auto" y "Dos al éxito"(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151123000000 -0300" channel="Canal 9">
+    <title lang="es">TVR (?)</title>
+    <desc lang="es">TVR continúa repasando todo lo que pasa en la tv argentina en un informe semanal de todo lo ocurrido en este bendito medio; los personajes, invitados especiales y los momentos memorables rescatados con agudeza y humor inteligente(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122003000 -0300" channel="Encuentro">
+    <title lang="es">6 mil millones de otros (?)</title>
+    <desc lang="es">Miles de testimonios de diversas personas, distintos países, diferentes culturas, distintas lenguas y un tema en común. Las entrevistas están basadas en preguntas que cruzan el interés humano(n)</desc>
+  </programme>
+  <programme start="20151122003000 -0300" stop="20151122010000 -0300" channel="Encuentro">
+    <title lang="es">Cuerpo a cuerpo (?)</title>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122013000 -0300" channel="Encuentro">
+    <title lang="es">Proyecto G (?)</title>
+    <desc lang="es">¿Son los hombres y las mujeres realmente tan diferentes? ¿Por qué nos hace ruido la panza cuando tenemos hambre? ¿Por qué aparece pelusa en el ombligo? ¿Cómo funciona un fósforo? Estos son algunas de los misterios que el Doctor G develará(n)</desc>
+  </programme>
+  <programme start="20151122013000 -0300" stop="20151122020000 -0300" channel="Encuentro">
+    <title lang="es">Caciques (?)</title>
+    <desc lang="es">Un retrato de muchos de aquellos líderes y guerreros que, aunque fueron relegados durante cientos de años al lugar de los vencidos, conocerlos mejor nos permite obtener un análisis más completo de la historia argentina(n)</desc>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122030000 -0300" channel="Encuentro">
+    <title lang="es">La historia no contada de Estados Unidos (?)</title>
+    <desc lang="es">La historia estadounidense desde una mirada inédita: planteando preguntas, indagando más allá de las versiones oficiales, presentándonos a héroes olvidados y desenmascarando a algunos de los que pasaron a las Historia como tales(n)</desc>
+  </programme>
+  <programme start="20151122030000 -0300" stop="20151122040000 -0300" channel="Encuentro">
+    <title lang="es">La historia del cine: Una odisea (?)</title>
+    <desc lang="es">El crítico Mark Cousins nos guía por un relato épico sobre innovación a lo largo de doce décadas, seis continentes y miles de películas. Con entrevistas a cineastas y actores legendarios, Cousins nos presenta “una carta de amor” al cine(n)</desc>
+  </programme>
+  <programme start="20151122040000 -0300" stop="20151122043000 -0300" channel="Encuentro">
+    <title lang="es">La sala (?)</title>
+    <desc lang="es">Músicos de diferentes estilos y de todas partes del país se instalan en el living de una casa y comparten su música en un ambiente distendido, lejos de la presión de un recital en vivo o del rigor técnico de un estudio de grabación(n)</desc>
+  </programme>
+  <programme start="20151122043000 -0300" stop="20151122050000 -0300" channel="Encuentro">
+    <title lang="es">Micromundos de la naturaleza (?)</title>
+    <desc lang="es">Un viaje por algunas de las piezas del gran rompecabezas que conforma la Tierra, por micromundos inmersos en una intrincada red de relaciones y de fuerzas naturales(n)</desc>
+  </programme>
+  <programme start="20151122050000 -0300" stop="20151122060000 -0300" channel="Encuentro">
+    <title lang="es">Ver la historia (?)</title>
+    <desc lang="es">Serie que aborda los 200 años de historia argentina: 1806-2010. Integrada por 13 capítulos, la serie se organiza a partir de acontecimientos socio-políticos significativos para la historia argentina(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122063000 -0300" channel="Encuentro">
+    <title lang="es">Península Valdés (?)</title>
+    <desc lang="es">La península de Valdés es una reserva natural de fauna y un área donde la preservación es fundamental en la vida de su comunidad, Conocemos su gente y su territorio, abocado al turismo, la investigación y al desarrollo científico(n)</desc>
+  </programme>
+  <programme start="20151122063000 -0300" stop="20151122070000 -0300" channel="Encuentro">
+    <title lang="es">El informe Kliksberg (?)</title>
+    <desc lang="es">Las principales problemáticas del mundo actual a la luz de dos de los capitales más urgentes de la humanidad: la ética y la solidaridad. Una mirada estadística y positiva para conocer soluciones posibles(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122073000 -0300" channel="Encuentro">
+    <title lang="es">Cómo hice (?)</title>
+    <desc lang="es">Esta serie gira en torno a las canciones que han hecho época, o que quedaron grabadas en la cultura popular argentina(n)</desc>
+  </programme>
+  <programme start="20151122073000 -0300" stop="20151122080000 -0300" channel="Encuentro">
+    <title lang="es">Filosofía aquí y ahora (?)</title>
+    <desc lang="es">José Pablo Feinmann despliega las propuestas de los grandes pensadores de todos los tiempos y presenta sus escritos esenciales para pensar la historia del mundo y de la actualidad desde un marco filosófico(n)</desc>
+  </programme>
+  <programme start="20151122080000 -0300" stop="20151122083000 -0300" channel="Encuentro">
+    <title lang="es">La ruta de las especias (?)</title>
+    <desc lang="es">Viajamos por la ruta 40 para redescubrir aromas y sabores, e historias de cosechadores, productores, comerciantes, indígenas, cocineros, enólogos, viñateros y músicos argentinos que son parte de esta ruta de las especias(n)</desc>
+  </programme>
+  <programme start="20151122083000 -0300" stop="20151122090000 -0300" channel="Encuentro">
+    <title lang="es">Juana. Bronce y libertad (?)</title>
+    <desc lang="es">Emprenderemos un viaje entre lo histórico y lo artístico para buscar la representación física de la obra de Juana Azurday, que significa un homenaje y un regalo del Estado Plurinacional de Bolivia a los hermanos del pueblo argentino(n)</desc>
+  </programme>
+  <programme start="20151122090000 -0300" stop="20151122093000 -0300" channel="Encuentro">
+    <title lang="es">Los trabajos y los días (?)</title>
+    <desc lang="es">Ciclo que describe los momentos más significativos en la historia laboral de nuestro país. Una serie que explora, con relatos y archivos, el  marco general de la situación de los trabajadores a lo largo del siglo XX(n)</desc>
+  </programme>
+  <programme start="20151122093000 -0300" stop="20151122100000 -0300" channel="Encuentro">
+    <title lang="es">Efecto realidad, periodismo de investigación (?)</title>
+    <desc lang="es">Serie donde grandes periodistas cuentan cómo fue el proceso de trabajo de los libros argentinos que hicieron historia. Una tarea intensa, con idas y vueltas, tensiones, cambio de planes, amarguras y satisfacciones(n)</desc>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122103000 -0300" channel="Encuentro">
+    <title lang="es">Arquitectos argentinos (?)</title>
+  </programme>
+  <programme start="20151122103000 -0300" stop="20151122110000 -0300" channel="Encuentro">
+    <title lang="es">Vocación de vida (?)</title>
+    <desc lang="es">Serie de documentales que narran historias verídicas sobre la vida y el destino. Son historias cuya intensidad emocional nos traslada al mundo de personajes comunes y simples cuyo compromiso con los hechos trasciende para siempre(n)</desc>
+  </programme>
+  <programme start="20151122110000 -0300" stop="20151122120000 -0300" channel="Encuentro">
+    <title lang="es">Rusia salvaje (?)</title>
+    <desc lang="es">Un recorrido por el hogar de osos gigantescos, enormes martas, águilas y búhos; y por la casa del más grande gato depredador. Las maravillas de la naturaleza rusa y el protagonismo de las especies animales que allí habitan(n)</desc>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122130000 -0300" channel="Encuentro">
+    <title lang="es">Encuentro en el estudio (?)</title>
+    <desc lang="es">Lalo Mir recibe en los estudios Ion a muchas de las figuras representativas de la escena musical argentina. El ciclo ofrece la historia esencial de los artistas, refleja las identidades de época y desgrana acordes y melodías(n)</desc>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122140000 -0300" channel="Encuentro">
+    <title lang="es">África (?)</title>
+    <desc lang="es">Una serie documental que observa al continente africano como nunca antes. Cada episodio promete un encuentro extraordinario con la fauna y la flora, y una aventura en lugares verdaderamente inexplorados..(n)</desc>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122143000 -0300" channel="Encuentro">
+    <title lang="es">Atlántico Sur (?)</title>
+    <desc lang="es">Documental grabado a lo largo de toda la costa argentina que presenta el más extensivo e inédito registro de los ecosistemas marinos(n)</desc>
+  </programme>
+  <programme start="20151122143000 -0300" stop="20151122150000 -0300" channel="Encuentro">
+    <title lang="es">Ensamblados (?)</title>
+  </programme>
+  <programme start="20151122150000 -0300" stop="20151122153000 -0300" channel="Encuentro">
+    <title lang="es">Qhapaq Ñan, desandando el camino (?)</title>
+    <desc lang="es">Los caminos viven cada vez que alguien los transita. El más antiguo de nuestro continente es la red vial que nació bajo los pies de los pueblos originarios y creció a través de seis países de Sudamérica(n)</desc>
+  </programme>
+  <programme start="20151122153000 -0300" stop="20151122170000 -0300" channel="Encuentro">
+    <title lang="es">León en la ballena (?)</title>
+  </programme>
+  <programme start="20151122170000 -0300" stop="20151122180000 -0300" channel="Encuentro">
+    <title lang="es">El Océano Índico con Simon Reeve (?)</title>
+    <desc lang="es">Con sus costas radiantes de sol y sus islas espectaculares, el Océano Índico baña algunos de los lugares más bellos y exóticos del planeta: Zanzíbar, las islas Seychelles, Mauricio, el Mar de Tasmania(n)</desc>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122190000 -0300" channel="Encuentro">
+    <title lang="es">Somos memoria (?)</title>
+    <desc lang="es">Entrevistas a diversas personalidades de la cultura, la política y la militancia por los derechos humanos, en el que a través de la trayectoria, experiencias de vida y anécdotas se puede leer la historia reciente de nuestro país(n)</desc>
+  </programme>
+  <programme start="20151122190000 -0300" stop="20151122200000 -0300" channel="Encuentro">
+    <title lang="es">Miyazaki (?)</title>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122203000 -0300" channel="Encuentro">
+    <title lang="es">Equilibrios, parques nacionales (?)</title>
+    <desc lang="es">Leonardo Proverbio, reconocido escalador argentino, recorre los parques nacionales más importante del país para conocer la maravilla de estos ambientes en los que conviven múltiples actores(n)</desc>
+  </programme>
+  <programme start="20151122203000 -0300" stop="20151122210000 -0300" channel="Encuentro">
+    <title lang="es">Biografías de la literatura (?)</title>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122213000 -0300" channel="Encuentro">
+    <title lang="es">Tu mundo. Argentina (?)</title>
+    <desc lang="es">Explorando cada lugar de una manera sensorial, mirando a través de sus habitantes, pero también a través de aquellos que lo visitan por primera vez, la serie te invita a tener una actitud activa y formar parte de una Argentina turística(n)</desc>
+  </programme>
+  <programme start="20151122213000 -0300" stop="20151122220000 -0300" channel="Encuentro">
+    <title lang="es">6 mil millones de otros (?)</title>
+    <desc lang="es">Miles de testimonios de diversas personas, distintos países, diferentes culturas, distintas lenguas y un tema en común. Las entrevistas están basadas en preguntas que cruzan el interés humano(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151123000000 -0300" channel="Encuentro">
+    <title lang="es">Rockumentales (?)</title>
+    <desc lang="es">Nueve películas argentinas sobre las bandas más emblemáticas de la escena nacional del rock. incluye a músicos como Miguel Abuelo, Luca Prodan y el Flaco Spinetta; pasando por grupos como Sui Generis, Los Violadores entre otros(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122003000 -0300" channel="Magazine">
+    <title lang="es">Conexiones (?)</title>
+  </programme>
+  <programme start="20151122003000 -0300" stop="20151122010000 -0300" channel="Magazine">
+    <title lang="es">Mi nuevo yo (?)</title>
+    <desc lang="es">Magazine de estética y salud, con toda la información sobre cirugías estéticas, tratamientos médicos y bienestar, para verte y sentirte cada día mejor(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122013000 -0300" channel="Magazine">
+    <title lang="es">Trasnoche show (?)</title>
+  </programme>
+  <programme start="20151122013000 -0300" stop="20151122020000 -0300" channel="Magazine">
+    <title lang="es">Medical Hair TV (?)</title>
+    <desc lang="es">Infomerciales(n)</desc>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122023000 -0300" channel="Magazine">
+    <title lang="es">Mshow (?)</title>
+    <desc lang="es">A diario, toda la actualidad de la televisión, el cine y el teatro, además de llevar a cabo la más completa cobertura de los eventos más importantes y entrevistas exclusivas con los protagonistas absolutos de la farándula(n)</desc>
+  </programme>
+  <programme start="20151122023000 -0300" stop="20151122030000 -0300" channel="Magazine">
+    <title lang="es">Dímelo tú (?)</title>
+    <desc lang="es">Una conversación íntima con los más renombrados hacedores del espectáculo, la ciencia, las letras, el deporte, el arte, la moda, la política, la economía y la religión(n)</desc>
+  </programme>
+  <programme start="20151122030000 -0300" stop="20151122040000 -0300" channel="Magazine">
+    <title lang="es">Betty la fea (?)</title>
+    <desc lang="es">Betty era una mujer que estaba acostumbrada a la idea de quedarse solterona, una joven poco agraciada que nadie invitaba a salir y que se conformaba con el recuerdo tormentoso de un novio que la dejó a los pocos días(n)</desc>
+  </programme>
+  <programme start="20151122040000 -0300" stop="20151122050000 -0300" channel="Magazine">
+    <title lang="es">La tormenta (?)</title>
+    <desc lang="es">En ese exótico lugar, un pueblo llamado Puerto Bravo, transcurre el drama y la pasión entre María Teresa Montilla y Santos Torrealba, dos seres de mundos opuestos que descubrirán que del odio al amor hay un sólo paso(n)</desc>
+  </programme>
+  <programme start="20151122050000 -0300" stop="20151122060000 -0300" channel="Magazine">
+    <title lang="es">Café con aroma de mujer (?)</title>
+    <desc lang="es">Café es la historia de un amor entre una recolectora de café a la que apodan Gaviota y Sebastián Vallejo, perteneciente a una distinguida familia cafetera que obviamente no acepta sus amores(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122063000 -0300" channel="Magazine">
+    <title lang="es">Alerta trend (?)</title>
+    <desc lang="es">Toda la moda y tendencia en Alerta TREND(n)</desc>
+  </programme>
+  <programme start="20151122063000 -0300" stop="20151122070000 -0300" channel="Magazine">
+    <title lang="es">Yes (?)</title>
+    <desc lang="es">"Yes" la nueva forma de acercarse al inglés, aprende Inglés con Charlie López(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122090000 -0300" channel="Magazine">
+    <title lang="es">Magacine (?)</title>
+    <desc lang="es">Los mejores títulos durante toda la semana, para disfrutar de grandes estrenos  y de esas películas que siempre queremos volver a ver(n)</desc>
+  </programme>
+  <programme start="20151122090000 -0300" stop="20151122103000 -0300" channel="Magazine">
+    <title lang="es">Magacine (?)</title>
+    <desc lang="es">Los mejores títulos durante toda la semana, para disfrutar de grandes estrenos  y de esas películas que siempre queremos volver a ver(n)</desc>
+  </programme>
+  <programme start="20151122103000 -0300" stop="20151122120000 -0300" channel="Magazine">
+    <title lang="es">Magacine (?)</title>
+    <desc lang="es">Los mejores títulos durante toda la semana, para disfrutar de grandes estrenos  y de esas películas que siempre queremos volver a ver(n)</desc>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122130000 -0300" channel="Magazine">
+    <title lang="es">Mshow, el resumen (?)</title>
+    <desc lang="es">Un compilado con los sucesos más importantes del mundo del espectáculo ocurridos durante la semana(n)</desc>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122140000 -0300" channel="Magazine">
+    <title lang="es">Los capos del humor (?)</title>
+    <desc lang="es">Un programa creado para recordar los momentos más divertidos de la televisión argentina protagonizados por grandes del género(n)</desc>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122150000 -0300" channel="Magazine">
+    <title lang="es">Magacine (?)</title>
+    <desc lang="es">Los mejores títulos durante toda la semana, para disfrutar de grandes estrenos  y de esas películas que siempre queremos volver a ver(n)</desc>
+  </programme>
+  <programme start="20151122150000 -0300" stop="20151122170000 -0300" channel="Magazine">
+    <title lang="es">Magacine (?)</title>
+    <desc lang="es">Los mejores títulos durante toda la semana, para disfrutar de grandes estrenos  y de esas películas que siempre queremos volver a ver(n)</desc>
+  </programme>
+  <programme start="20151122170000 -0300" stop="20151122190000 -0300" channel="Magazine">
+    <title lang="es">Magacine (?)</title>
+    <desc lang="es">Los mejores títulos durante toda la semana, para disfrutar de grandes estrenos  y de esas películas que siempre queremos volver a ver(n)</desc>
+  </programme>
+  <programme start="20151122190000 -0300" stop="20151122200000 -0300" channel="Magazine">
+    <title lang="es">La jaula de la moda (?)</title>
+    <desc lang="es">Nuestros especialistas analizarán el look de los famosos y brindarán las críticas más agudas. Además, ofrecerán consejos útiles para que los personajes de la farándula logren el estilo más adecuado para cada ocasión(n)</desc>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122210000 -0300" channel="Magazine">
+    <title lang="es">Noche de chicas (?)</title>
+    <desc lang="es">Programa de talk show con una tribuna de mujeres que debaten sobre todos los temas que les interesan a ellas(n)</desc>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122230000 -0300" channel="Magazine">
+    <title lang="es">Lo mejor de bailando (?)</title>
+    <desc lang="es">Nueva entrega de “Lo mejor de Bailando”, el resumen más completo de todo lo ocurrido en el certamen de baile de Showmatch. Se mostrarán todas las coreografías que se presentaron en la semana, en el certamen de baile mas famoso del país(n)</desc>
+  </programme>
+  <programme start="20151122230000 -0300" stop="20151123000000 -0300" channel="Magazine">
+    <title lang="es">Policías en acción (?)</title>
+    <desc lang="es">"Policías en acción" presenta una mirada a todos los aspectos de la policía del siglo XXI y a los desafíos que combaten diariamente. Confrontaciones armadas, persecuciones de autos o peligro de bombas(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122020000 -0300" channel="ESPN">
+    <title lang="es">Viernes de N.B.A. (?)</title>
+    <desc lang="es">Como nos tiene acostumbrados, la NBA volverá a lucir a sus grandes estrellas. Nombres estelares irán enriqueciendo con su talento una temporada que promete, como siempre, una tenaz lucha(n)</desc>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122023000 -0300" channel="ESPN">
+    <title lang="es">ESPN F1 - Highlights (?)</title>
+    <desc lang="es">La Fórmula 1 es la competencia más importante y la que mayor pasión despierta en el automovilismo. Son 18 carreras alrededor del mundo, son las máquinas más perfectas y hermosas manejadas por los pilotos más talentosos y valientes(n)</desc>
+  </programme>
+  <programme start="20151122023000 -0300" stop="20151122030000 -0300" channel="ESPN">
+    <title lang="es">ESPN F1 - A fondo (?)</title>
+    <desc lang="es">La Fórmula 1 es la competencia más importante y la que mayor pasión despierta en el automovilismo. Son 18 carreras alrededor del mundo, son las máquinas más perfectas y hermosas manejadas por los pilotos más talentosos y valientes(n)</desc>
+  </programme>
+  <programme start="20151122030000 -0300" stop="20151122040000 -0300" channel="ESPN">
+    <title lang="es">Hablemos de fútbol (?)</title>
+    <desc lang="es">Raúl Taquini, Norberto Verea, Eduardo Caimi, Roberto Perfumo, Jorge Bermúdez y Enrique Sacco presentan el análisis y el debate de lo más destacado del fútbol argentino(n)</desc>
+  </programme>
+  <programme start="20151122040000 -0300" stop="20151122050000 -0300" channel="ESPN">
+    <title lang="es">Sportscenter (LA) (?)</title>
+    <desc lang="es">SportsCenter es el mejor y más completo noticiario de la televisión. Ofrece noticias, análisis y comentarios con profundidad del deporte internacional, pero con especial énfasis sobre todo lo referente al deporte sudamericano(n)</desc>
+  </programme>
+  <programme start="20151122050000 -0300" stop="20151122060000 -0300" channel="ESPN">
+    <title lang="es">Sportscenter (LA) (?)</title>
+    <desc lang="es">SportsCenter es el mejor y más completo noticiario de la televisión. Ofrece noticias, análisis y comentarios con profundidad del deporte internacional, pero con especial énfasis sobre todo lo referente al deporte sudamericano(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122070000 -0300" channel="ESPN">
+    <title lang="es">Sportscenter (LA) (?)</title>
+    <desc lang="es">SportsCenter es el mejor y más completo noticiario de la televisión. Ofrece noticias, análisis y comentarios con profundidad del deporte internacional, pero con especial énfasis sobre todo lo referente al deporte sudamericano(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122080000 -0300" channel="ESPN">
+    <title lang="es">Sportscenter (LA) (?)</title>
+    <desc lang="es">SportsCenter es el mejor y más completo noticiario de la televisión. Ofrece noticias, análisis y comentarios con profundidad del deporte internacional, pero con especial énfasis sobre todo lo referente al deporte sudamericano(n)</desc>
+  </programme>
+  <programme start="20151122080000 -0300" stop="20151122090000 -0300" channel="ESPN">
+    <title lang="es">Sportscenter (LA) (?)</title>
+    <desc lang="es">SportsCenter es el mejor y más completo noticiario de la televisión. Ofrece noticias, análisis y comentarios con profundidad del deporte internacional, pero con especial énfasis sobre todo lo referente al deporte sudamericano(n)</desc>
+  </programme>
+  <programme start="20151122090000 -0300" stop="20151122100000 -0300" channel="ESPN">
+    <title lang="es">Sportscenter (LA) (?)</title>
+    <desc lang="es">SportsCenter es el mejor y más completo noticiario de la televisión. Ofrece noticias, análisis y comentarios con profundidad del deporte internacional, pero con especial énfasis sobre todo lo referente al deporte sudamericano(n)</desc>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122110000 -0300" channel="ESPN">
+    <title lang="es">Hablemos de fútbol (?)</title>
+    <desc lang="es">Raúl Taquini, Norberto Verea, Eduardo Caimi, Roberto Perfumo, Jorge Bermúdez y Enrique Sacco presentan el análisis y el debate de lo más destacado del fútbol argentino(n)</desc>
+  </programme>
+  <programme start="20151122110000 -0300" stop="20151122113000 -0300" channel="ESPN">
+    <title lang="es">Planet Speed (?)</title>
+    <desc lang="es">Las novedades del automovilismo y motociclismo internacional(n)</desc>
+  </programme>
+  <programme start="20151122113000 -0300" stop="20151122120000 -0300" channel="ESPN">
+    <title lang="es">UEFA Champions League Weekly (?)</title>
+    <desc lang="es">La revista semanal de la UEFA Champions League con entrevistas, notas y curiosidades del torneo de clubes más importante del mundo(n)</desc>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122130000 -0300" channel="ESPN">
+    <title lang="es">Bundesliga - Compact (?)</title>
+    <desc lang="es">Los 18 equipos compiten todos contra todos en partidos de ida y vuelta. Los primeros 4 clasifican para la UEFA Champions League. El quinto y el sexto clasifican a la UEFA Europa League. Los dos últimos, descienden a la segunda categoría(n)</desc>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122135500 -0300" channel="ESPN">
+    <title lang="es">Simplemente fútbol (?)</title>
+    <desc lang="es">El programa creado y conducido por Quique Wolff, que homenajea al fútbol y su belleza, con visitas destacadas y un toque musical(n)</desc>
+  </programme>
+  <programme start="20151122135500 -0300" stop="20151122160000 -0300" channel="ESPN">
+    <title lang="es">Fútbol de Italia - Serie A (?)</title>
+    <desc lang="es">Primera división del fútbol italiano en la que 20 equipos se enfrentan todos contra todos en dos rondas (ida y vuelta). El campeón y los dos siguientes clasifican a la Champions League, mientras que 4to y 5to, jugarán la Europa League(n)</desc>
+  </programme>
+  <programme start="20151122160000 -0300" stop="20151122180000 -0300" channel="ESPN">
+    <title lang="es">A confirmar (?)</title>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122190000 -0300" channel="ESPN">
+    <title lang="es">Premier League - Compact (?)</title>
+    <desc lang="es">Hay 20 equipos que se enfrentan dos veces entre sí. Al final de cada temporada, los tres últimos descienden a la Football League y son sustituidos por los dos mejores, junto al ganador de un play-off entre el tercero y el sexto(n)</desc>
+  </programme>
+  <programme start="20151122190000 -0300" stop="20151122200000 -0300" channel="ESPN">
+    <title lang="es">Fútbol de España - Compact (?)</title>
+    <desc lang="es">Máxima categoría del sistema de Ligas de fútbol de España que se disputa anualmente y consta de un grupo único integrado por veinte equipos que se enfrentan todos contra todos en dos ocasiones (local y visitante)(n)</desc>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122210000 -0300" channel="ESPN">
+    <title lang="es">Bundesliga - Compact (?)</title>
+    <desc lang="es">Los 18 equipos compiten todos contra todos en partidos de ida y vuelta. Los primeros 4 clasifican para la UEFA Champions League. El quinto y el sexto clasifican a la UEFA Europa League. Los dos últimos, descienden a la segunda categoría(n)</desc>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122220000 -0300" channel="ESPN">
+    <title lang="es">Fútbol de España - Compact (?)</title>
+    <desc lang="es">Máxima categoría del sistema de Ligas de fútbol de España que se disputa anualmente y consta de un grupo único integrado por veinte equipos que se enfrentan todos contra todos en dos ocasiones (local y visitante)(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122223000 -0300" channel="ESPN">
+    <title lang="es">ESPN F1 - A fondo (?)</title>
+    <desc lang="es">La Fórmula 1 es la competencia más importante y la que mayor pasión despierta en el automovilismo. Son 18 carreras alrededor del mundo, son las máquinas más perfectas y hermosas manejadas por los pilotos más talentosos y valientes(n)</desc>
+  </programme>
+  <programme start="20151122223000 -0300" stop="20151122230000 -0300" channel="ESPN">
+    <title lang="es">ESPN F1 - Highlights (?)</title>
+    <desc lang="es">La Fórmula 1 es la competencia más importante y la que mayor pasión despierta en el automovilismo. Son 18 carreras alrededor del mundo, son las máquinas más perfectas y hermosas manejadas por los pilotos más talentosos y valientes(n)</desc>
+  </programme>
+  <programme start="20151122230000 -0300" stop="20151123000000 -0300" channel="ESPN">
+    <title lang="es">Sportscenter (LA) (?)</title>
+    <desc lang="es">SportsCenter es el mejor y más completo noticiario de la televisión. Ofrece noticias, análisis y comentarios con profundidad del deporte internacional, pero con especial énfasis sobre todo lo referente al deporte sudamericano(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122120000 -0300" channel="ESPN +">
+    <title lang="es">ESPN (?)</title>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151123000000 -0300" channel="ESPN +">
+    <title lang="es">ESPN (?)</title>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122010000 -0300" channel="T y C Sports">
+    <title lang="es">Sportia (?)</title>
+    <desc lang="es">Gastón Recondo se suma al plantel de Sportia para cerrar la jornada informados en un clima distendido, con entrevistas, análisis y todo lo que dejó la actividad deportiva del día(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122013000 -0300" channel="T y C Sports">
+    <title lang="es">Esto es footgolf (?)</title>
+    <desc lang="es">Una partida de FootGolf, el nuevo concepto que surge de la combinación entre el golf y el fútbol, es la excusa perfecta para que Pablo González entreviste de manera distendida a distintas personalidades del deporte y del espectáculo(n)</desc>
+  </programme>
+  <programme start="20151122013000 -0300" stop="20151122020000 -0300" channel="T y C Sports">
+    <title lang="es">Upgrade Golf (?)</title>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122040000 -0300" channel="T y C Sports">
+    <title lang="es">Copa Davis (?)</title>
+    <desc lang="es">Participan equipos nacionales masculinos compuestos por jugadores designados por su federación nacional deportiva. Cada ronda consiste en cinco partidos (cuatro singles y un dobles), proclamándose vencedor aquél que obtenga tres victorias(n)</desc>
+  </programme>
+  <programme start="20151122040000 -0300" stop="20151122060000 -0300" channel="T y C Sports">
+    <title lang="es">Copa Davis (?)</title>
+    <desc lang="es">Participan equipos nacionales masculinos compuestos por jugadores designados por su federación nacional deportiva. Cada ronda consiste en cinco partidos (cuatro singles y un dobles), proclamándose vencedor aquél que obtenga tres victorias(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122070000 -0300" channel="T y C Sports">
+    <title lang="es">Sportia (?)</title>
+    <desc lang="es">Gastón Recondo se suma al plantel de Sportia para cerrar la jornada informados en un clima distendido, con entrevistas, análisis y todo lo que dejó la actividad deportiva del día(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122080000 -0300" channel="T y C Sports">
+    <title lang="es">Planeta gol (?)</title>
+  </programme>
+  <programme start="20151122080000 -0300" stop="20151122110000 -0300" channel="T y C Sports">
+    <title lang="es">Sportia (?)</title>
+    <desc lang="es">El servicio informativo de TyC Sports ofrece cinco horas de pura información deportiva en un supermatutino con móviles en vivo desde los entrenamientos, especialistas en cada disciplina y secciones especiales(n)</desc>
+  </programme>
+  <programme start="20151122110000 -0300" stop="20151122120000 -0300" channel="T y C Sports">
+    <title lang="es">Uno contra uno (?)</title>
+  </programme>
+  <programme start="20151122120000 -0300" stop="20151122123000 -0300" channel="T y C Sports">
+    <title lang="es">Carburando - PGM (On Board) (?)</title>
+    <desc lang="es">Toda la adrenalina del automovilismo vivida desde la butaca de los más selectos pilotos con la transmisión de la carrera de las principales categorías con más de diez cámaras a bordo(n)</desc>
+  </programme>
+  <programme start="20151122123000 -0300" stop="20151122130000 -0300" channel="T y C Sports">
+    <title lang="es">Veinticinco (?)</title>
+    <desc lang="es">Gonzalo Bonadeo presenta el mejor ranking de eventos, acontecimientos y personajes de la historia del deporte en 25 imágenes diferentes(n)</desc>
+  </programme>
+  <programme start="20151122130000 -0300" stop="20151122150000 -0300" channel="T y C Sports">
+    <title lang="es">Primera B (?)</title>
+    <desc lang="es">Los mejores partidos del ascenso del fútbol argentino(n)</desc>
+  </programme>
+  <programme start="20151122150000 -0300" stop="20151122170000 -0300" channel="T y C Sports">
+    <title lang="es">Carburando clasificación (?)</title>
+    <desc lang="es">Una cita obligada para los fanáticos. La Fórmula 1, el Rally y la historia del automovilismo tampoco faltan en las diferentes emisiones de Carburando(n)</desc>
+  </programme>
+  <programme start="20151122170000 -0300" stop="20151122180000 -0300" channel="T y C Sports">
+    <title lang="es">Sportia (?)</title>
+    <desc lang="es">El servicio informativo de TyC Sports con la más amplia y completa cobertura del deporte nacional e internacional, con móviles en vivo, especialistas en cada una de las disciplinas y flashes informativos durante todo el día(n)</desc>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122200000 -0300" channel="T y C Sports">
+    <title lang="es">Primera B (?)</title>
+    <desc lang="es">Los mejores partidos del ascenso del fútbol argentino(n)</desc>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122220000 -0300" channel="T y C Sports">
+    <title lang="es">Primera B (?)</title>
+    <desc lang="es">Los mejores partidos del ascenso del fútbol argentino(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122230000 -0300" channel="T y C Sports">
+    <title lang="es">Sportia (?)</title>
+    <desc lang="es">Gastón Recondo se suma al plantel de Sportia para cerrar la jornada informados en un clima distendido, con entrevistas, análisis y todo lo que dejó la actividad deportiva del día(n)</desc>
+  </programme>
+  <programme start="20151122230000 -0300" stop="20151123000000 -0300" channel="T y C Sports">
+    <title lang="es">Boxeo de primera (?)</title>
+    <desc lang="es">Las mejores peleas del ámbito nacional e internacional(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122003000 -0300" channel="Fox Sports">
+    <title lang="es">NET, nunca es tarde (?)</title>
+    <desc lang="es">Con la conducción de Germán Paoloski, este es el primer late show en su historia para toda América Latina. Este ciclo combina entrevistas con invitados, juegos, actualidad y humor(n)</desc>
+  </programme>
+  <programme start="20151122003000 -0300" stop="20151122013000 -0300" channel="Fox Sports">
+    <title lang="es">Central Fox (?)</title>
+    <desc lang="es">La nueva central de deportes para revolucionar la cobertura informativa. Cinco horas y media en vivo por día con toda la información deportiva a nivel mundial y los más destacados columnistas(n)</desc>
+  </programme>
+  <programme start="20151122013000 -0300" stop="20151122030000 -0300" channel="Fox Sports">
+    <title lang="es">NET, nunca es tarde (?)</title>
+    <desc lang="es">Con la conducción de Germán Paoloski, este es el primer late show en su historia para toda América Latina. Este ciclo combina entrevistas con invitados, juegos, actualidad y humor(n)</desc>
+  </programme>
+  <programme start="20151122030000 -0300" stop="20151122040000 -0300" channel="Fox Sports">
+    <title lang="es">Central Fox (?)</title>
+    <desc lang="es">La nueva central de deportes para revolucionar la cobertura informativa. Cinco horas y media en vivo por día con toda la información deportiva a nivel mundial y los más destacados columnistas(n)</desc>
+  </programme>
+  <programme start="20151122040000 -0300" stop="20151122060000 -0300" channel="Fox Sports">
+    <title lang="es">UEFA Champions League (?)</title>
+    <desc lang="es">Es la 61ra. edición de la competición. 32 equipos son distribuidos en 8 grupos. Los dos primeros de cada uno avanzan a la fase eliminatoria para determinar a los finalistas que disputarán el encuentro decisivo en el estadio Giuseppe Meazza(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122070000 -0300" channel="Fox Sports">
+    <title lang="es">Central Fox (?)</title>
+    <desc lang="es">La nueva central de deportes para revolucionar la cobertura informativa. Cinco horas y media en vivo por día con toda la información deportiva a nivel mundial y los más destacados columnistas(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122090000 -0300" channel="Fox Sports">
+    <title lang="es">Fox Sports Radio (?)</title>
+    <desc lang="es">El programa de radio al natural como si las cámaras no estuvieran ahí, logrando un formato televisivo original y novedoso. Debate, análisis, opinión e información futbolística al instante(n)</desc>
+  </programme>
+  <programme start="20151122090000 -0300" stop="20151122093000 -0300" channel="Fox Sports">
+    <title lang="es">Expediente fútbol (?)</title>
+    <desc lang="es">Un programa de archivo, basado en hechos, partidos y campañas de los equipos de fútbol de Latinoamérica. Para recordar aquellas finales históricas, grandes goles, jugadas y circunstancias que marcaron una época(n)</desc>
+  </programme>
+  <programme start="20151122093000 -0300" stop="20151122100000 -0300" channel="Fox Sports">
+    <title lang="es">Fox Fit (?)</title>
+    <desc lang="es">Lucila Vit y Carolina Villarino nos enseñan cómo mantener un cuerpo sano(n)</desc>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122103000 -0300" channel="Fox Sports">
+    <title lang="es">Fox Fit (?)</title>
+    <desc lang="es">Lucila Vit y Carolina Villarino nos enseñan cómo mantener un cuerpo sano(n)</desc>
+  </programme>
+  <programme start="20151122103000 -0300" stop="20151122113000 -0300" channel="Fox Sports">
+    <title lang="es">Review (?)</title>
+    <desc lang="es">Repaso de los mejores momentos del deporte(n)</desc>
+  </programme>
+  <programme start="20151122113000 -0300" stop="20151122133000 -0300" channel="Fox Sports">
+    <title lang="es">Bundesliga (?)</title>
+    <desc lang="es">Los 18 equipos compiten todos contra todos en partidos de ida y vuelta. Los primeros 4 clasifican para la UEFA Champions League. El quinto y el sexto clasifican a la UEFA Europa League. Los dos últimos, descienden a la segunda categoría(n)</desc>
+  </programme>
+  <programme start="20151122133000 -0300" stop="20151122140000 -0300" channel="Fox Sports">
+    <title lang="es">Momentos eternos (?)</title>
+    <desc lang="es">Programa que desarrolla un momento importante del deporte nacional, narrado por protagonistas(n)</desc>
+  </programme>
+  <programme start="20151122140000 -0300" stop="20151122160000 -0300" channel="Fox Sports">
+    <title lang="es">Fox Sports clásico (?)</title>
+    <desc lang="es">Revive los partidos más importantes de los campeonatos nacionales e internacionales del fútbol sudamericano(n)</desc>
+  </programme>
+  <programme start="20151122160000 -0300" stop="20151122170000 -0300" channel="Fox Sports">
+    <title lang="es">Futsal AFA (?)</title>
+    <desc lang="es">Un resumen con lo mejor de lo que ocurre en cada fecha del torneo oficial de Futsal que organiza la Asociación de Fútbol Argentino(n)</desc>
+  </programme>
+  <programme start="20151122170000 -0300" stop="20151122180000 -0300" channel="Fox Sports">
+    <title lang="es">El show de la Copa Sudamericana (?)</title>
+    <desc lang="es">Los goles, las mejores jugadas, el mejor resumen y la mejor afición de este torneo histórico se presentan en el show de la Copa Sudamericana. Fox Sports te trae los mejores momentos de cada encuentro(n)</desc>
+  </programme>
+  <programme start="20151122180000 -0300" stop="20151122190000 -0300" channel="Fox Sports">
+    <title lang="es">Lo mejor de NET (?)</title>
+    <desc lang="es">Programa de entrevistas y conversación con invitados del mundo del deporte y artístico(n)</desc>
+  </programme>
+  <programme start="20151122190000 -0300" stop="20151122200000 -0300" channel="Fox Sports">
+    <title lang="es">Fox olímpico (?)</title>
+    <desc lang="es">Sigue todos los pormenores de cara a los Juegos Olímpicos de Rio 2016(n)</desc>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122210000 -0300" channel="Fox Sports">
+    <title lang="es">Superclásico (?)</title>
+    <desc lang="es">Un programa pensado especialmente para los fanáticos de los dos clubes más poderosos de la Argentina, para que los hinchas no le pierdan pisada a todo lo que acontece alrededor de su equipo(n)</desc>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122220000 -0300" channel="Fox Sports">
+    <title lang="es">El show de la Fórmula 1 (?)</title>
+    <desc lang="es">Un programa con todo lo que necesitas saber de la Fórmula 1. Resúmenes, datos sobre los pilotos, sus autos, las próximas carreras y un análisis con el acelerador a fondo con afamados especialistas de este apasionante deporte(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122230000 -0300" channel="Fox Sports">
+    <title lang="es">Boxeo Classic (?)</title>
+    <desc lang="es">FOX Sports emitirá peleas internacionales en vivo y programas de archivo que organice Golden Boy -la agencia de Oscar De la Hoya,(n)</desc>
+  </programme>
+  <programme start="20151122230000 -0300" stop="20151123000000 -0300" channel="Fox Sports">
+    <title lang="es">Central Fox (?)</title>
+    <desc lang="es">La nueva central de deportes para revolucionar la cobertura informativa. Cinco horas y media en vivo por día con toda la información deportiva a nivel mundial y los más destacados columnistas(n)</desc>
+  </programme>
+  <programme start="20151122000000 -0300" stop="20151122010000 -0300" channel="Fox Sports 2">
+    <title lang="es">Expediente fútbol (?)</title>
+    <desc lang="es">La banda nacida en Avellaneda repasó su carrera en dialago con Juanky Jurado(n)</desc>
+  </programme>
+  <programme start="20151122010000 -0300" stop="20151122020000 -0300" channel="Fox Sports 2">
+    <title lang="es">Fox Gol (?)</title>
+    <desc lang="es">Un repaso informal de los goles de todo el mundo y las mejores atajadas, con la continua interacción de la gente a través de distintos medios(n)</desc>
+  </programme>
+  <programme start="20151122020000 -0300" stop="20151122030000 -0300" channel="Fox Sports 2">
+    <title lang="es">Central Fox (?)</title>
+    <desc lang="es">La nueva central de deportes para revolucionar la cobertura informativa. Cinco horas y media en vivo por día con toda la información deportiva a nivel mundial y los más destacados columnistas(n)</desc>
+  </programme>
+  <programme start="20151122030000 -0300" stop="20151122050000 -0300" channel="Fox Sports 2">
+    <title lang="es">UEFA Champions League (?)</title>
+    <desc lang="es">Es la 61ra. edición de la competición. 32 equipos son distribuidos en 8 grupos. Los dos primeros de cada uno avanzan a la fase eliminatoria para determinar a los finalistas que disputarán el encuentro decisivo en el estadio Giuseppe Meazza(n)</desc>
+  </programme>
+  <programme start="20151122050000 -0300" stop="20151122060000 -0300" channel="Fox Sports 2">
+    <title lang="es">Central Fox (?)</title>
+    <desc lang="es">La nueva central de deportes para revolucionar la cobertura informativa. Cinco horas y media en vivo por día con toda la información deportiva a nivel mundial y los más destacados columnistas(n)</desc>
+  </programme>
+  <programme start="20151122060000 -0300" stop="20151122070000 -0300" channel="Fox Sports 2">
+    <title lang="es">Review (?)</title>
+    <desc lang="es">Repaso de los mejores momentos del deporte(n)</desc>
+  </programme>
+  <programme start="20151122070000 -0300" stop="20151122080000 -0300" channel="Fox Sports 2">
+    <title lang="es">Central Fox (?)</title>
+    <desc lang="es">La nueva central de deportes para revolucionar la cobertura informativa. Cinco horas y media en vivo por día con toda la información deportiva a nivel mundial y los más destacados columnistas(n)</desc>
+  </programme>
+  <programme start="20151122080000 -0300" stop="20151122083000 -0300" channel="Fox Sports 2">
+    <title lang="es">ATP Magazine (?)</title>
+    <desc lang="es">Un resumen de noticias sobre los acontecimientos de los torneos de Tenis ATP en todo el mundo(n)</desc>
+  </programme>
+  <programme start="20151122083000 -0300" stop="20151122090000 -0300" channel="Fox Sports 2">
+    <title lang="es">Racing TV (?)</title>
+    <desc lang="es">Toda la cobertura con las noticias, entrevistas y novedades del último campeón del futbol argentino: Racing Club de Avellaneda(n)</desc>
+  </programme>
+  <programme start="20151122090000 -0300" stop="20151122100000 -0300" channel="Fox Sports 2">
+    <title lang="es">Sin anestesia (?)</title>
+    <desc lang="es">Programa de entrevistas a figuras del deporte(n)</desc>
+  </programme>
+  <programme start="20151122100000 -0300" stop="20151122103000 -0300" channel="Fox Sports 2">
+    <title lang="es">Serie A Show (?)</title>
+    <desc lang="es">El resumen semanal de la competición de fútbol italiano(n)</desc>
+  </programme>
+  <programme start="20151122103000 -0300" stop="20151122110000 -0300" channel="Fox Sports 2">
+    <title lang="es">Gillette World Sports (?)</title>
+  </programme>
+  <programme start="20151122110000 -0300" stop="20151122113000 -0300" channel="Fox Sports 2">
+    <title lang="es">Bundesliga Weekly (?)</title>
+  </programme>
+  <programme start="20151122113000 -0300" stop="20151122133000 -0300" channel="Fox Sports 2">
+    <title lang="es">Bundesliga (?)</title>
+    <desc lang="es">Los 18 equipos compiten todos contra todos en partidos de ida y vuelta. Los primeros 4 clasifican para la UEFA Champions League. El quinto y el sexto clasifican a la UEFA Europa League. Los dos últimos, descienden a la segunda categoría(n)</desc>
+  </programme>
+  <programme start="20151122133000 -0300" stop="20151122163000 -0300" channel="Fox Sports 2">
+    <title lang="es">WWE Raw (?)</title>
+    <desc lang="es">Los enfrentamientos más impactantes son protagonizados por las superestrellas de la WWE, quienes están dispuestos a dejar todo en el ring, con el único objetivo de salir con la victoria(n)</desc>
+  </programme>
+  <programme start="20151122163000 -0300" stop="20151122170000 -0300" channel="Fox Sports 2">
+    <title lang="es">Momentos eternos (?)</title>
+    <desc lang="es">Programa que desarrolla un momento importante del deporte nacional, narrado por protagonistas(n)</desc>
+  </programme>
+  <programme start="20151122170000 -0300" stop="20151122190000 -0300" channel="Fox Sports 2">
+    <title lang="es">Bellator MMA (?)</title>
+    <desc lang="es">Bellator MMA es la empresa más grande del mundo organizadora de torneos de AMM. El ganador del torneo es declarado el número uno en su respectiva categoría de peso, y se le otorga un cheque por $100,000(n)</desc>
+  </programme>
+  <programme start="20151122190000 -0300" stop="20151122200000 -0300" channel="Fox Sports 2">
+    <title lang="es">Hoyo 19 (?)</title>
+    <desc lang="es">Un programa de golf para los amantes de este deporte. Un lugar donde los aficionados podrán mejorar su juego a través de los consejos de profesores, conocerán las reglas, ejercicios específicos y los mejores clubes y sus canchas(n)</desc>
+  </programme>
+  <programme start="20151122200000 -0300" stop="20151122203000 -0300" channel="Fox Sports 2">
+    <title lang="es">Pasión extrema (?)</title>
+    <desc lang="es">El Surfing junto al Snowboard y el Skateboard son deportes alternativos que se caracterizan por crear un estilo de vida muy particular. Marcan tendencias y crean valores comunes que forman parte de un verdadero universo(n)</desc>
+  </programme>
+  <programme start="20151122203000 -0300" stop="20151122210000 -0300" channel="Fox Sports 2">
+    <title lang="es">Segundo saque (?)</title>
+    <desc lang="es">El detrás de escena de  uno de los deportes más convocantes del planeta. Cómo viven, qué comen, cómo se entrenan, cómo se divierten y qué hacen las principales figuras del tenis mundial(n)</desc>
+  </programme>
+  <programme start="20151122210000 -0300" stop="20151122220000 -0300" channel="Fox Sports 2">
+    <title lang="es">WWE Divas (?)</title>
+    <desc lang="es">Versión femenina de la World Wrestling Entertainment(n)</desc>
+  </programme>
+  <programme start="20151122220000 -0300" stop="20151122230000 -0300" channel="Fox Sports 2">
+    <title lang="es">Stop and Go (?)</title>
+    <desc lang="es">Stop and GO es un programa de autos y deportes, que combina lo mejor del Lifestyle, la música, los deportes extremos y viajes por el mundo(n)</desc>
+  </programme>
+  <programme start="20151122230000 -0300" stop="20151123000000 -0300" channel="Fox Sports 2">
+    <title lang="es">Liga MX (?)</title>
+    <desc lang="es">Es el primer nivel en la Liga Mexicana de Fútbol. 18 equipos compiten todos contra todos en la Liga. Los ocho clubes calificados para la liguilla, jugarán partidos de visita recíproca de cuartos de final, semifinal y la gran final(n)</desc>
+  </programme>
+  <programme start="20151122183000 +0000" stop="20151122192500 +0000" channel="Sky Sports 1">
+    <title lang="en">Football League Goals</title>
+    <desc lang="en">A comprehensive round-up of all the goals and major talking points from the weekend's action in the Sky Bet Football League. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXfootballleagoals15.jpg" />
+  </programme>
+  <programme start="20151122192500 +0000" stop="20151122213000 +0000" channel="Sky Sports 1">
+    <title lang="en">Live Real Betis v A. Madrid</title>
+    <desc lang="en">Real Betis meet Atletico Madrid at the Estadio Benito Villamarin. Atletico will need to win here to put themselves in the mix at the top of the table, with El Clasico on this weekend. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXlaligarealbetisamad.jpg" />
+  </programme>
+  <programme start="20151122213000 +0000" stop="20151122214500 +0000" channel="Sky Sports 1">
+    <title lang="en">Real Madrid v Barcelona</title>
+    <desc lang="en">Real Madrid welcome Barcelona to the Santiago Bernabeu for 'El Clasico' in La Liga. Last year's fixture saw Luis Suarez strike to give Barca a 2-1 win. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXspanhighrealmbarca.jpg" />
+  </programme>
+  <programme start="20151122214500 +0000" stop="20151122220000 +0000" channel="Sky Sports 1">
+    <title lang="en">Spanish Gold: El Clasico 07/08</title>
+    <desc lang="en">Real Madrid face Barcelona at the Santiago Bernabeu in this classic La Liga clash from the 2007/08 campaign. Madrid had clinched the title three days before with a 2-1 win over Osasuna. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXspanfootrealmbarca08.jpg" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151122221000 +0000" channel="Sky Sports 1">
+    <title lang="en">Sky Scholars: I am Holly Bradshaw</title>
+    <desc lang="en">A profile of Sky Academy Sports Scholar Holly Bradshaw. The English pole-vaulter won gold at the 2013 European Indoor Championships and a bronze at the 2012 World Indoor Championships. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Athletics</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXscholarsholbradsh.jpg" />
+  </programme>
+  <programme start="20151122221000 +0000" stop="20151123001500 +0000" channel="Sky Sports 1">
+    <title lang="en">Live MLS: Columbus v NY Red Bulls</title>
+    <desc lang="en">Columbus Crew meet New York Red Bulls in America's MLS. The Red Bulls are the favourites for the MLS Cup now it has reached this Conference finals stage. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXmlsccrewnyrbulls.jpg" />
+  </programme>
+  <programme start="20151122203000 +0000" stop="20151122210000 +0000" channel="Sky Sports 3">
+    <title lang="en">Sporting Greats: Rafael Nadal</title>
+    <desc lang="en">A profile of Spanish tennis player Rafael Nadal. Perhaps the greatest clay court competitor in the history of the game, Nadal has more French Open titles to his name than any other player(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Tennis</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXsgrafnadal.jpg" />
+  </programme>
+  <programme start="20151122210000 +0000" stop="20151122220000 +0000" channel="Sky Sports 3">
+    <title lang="en">Live European Rugby Special</title>
+    <desc lang="en">Rounding up all of the best action from the premier European rugby tournament, the European Champions Cup, as holders Toulon host Bath and Leinster play Wasps. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Rugby</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXeurorugbyspec.jpg" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151122233000 +0000" channel="Sky Sports 3">
+    <title lang="en">Ford Football Special</title>
+    <desc lang="en">Tottenham Hotspur meet West Ham United at the Boleyn Ground in the Barclays Premier League. West Ham have been imperious on the road, beating Arsenal and Man City earlier this year. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXsupsunspurswhu2.jpg" />
+  </programme>
+  <programme start="20151122233000 +0000" stop="20151123003000 +0000" channel="Sky Sports 3">
+    <title lang="en">European Rugby Special</title>
+    <desc lang="en">Rounding up all of the best action from the premier European rugby tournament, the European Champions Cup, as holders Toulon host Bath and Leinster play Wasps. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Rugby</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXeurorugbyspec.jpg" />
+  </programme>
+  <programme start="20151122190000 +0000" stop="20151122210000 +0000" channel="Sky Sports 4">
+    <title lang="en">Live LPGA Tour Golf</title>
+    <desc lang="en">Day four of the CME Group Tour Championship at Tiburon Golf Club in Florida. Press red for coverage of the RSM Classic at the Sea Island Golf Club in Georgia(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Golf</category>
+    <icon src="http://tv.sky.com/logoWithBackground/73/skycha1322.png" />
+  </programme>
+  <programme start="20151122210000 +0000" stop="20151122220000 +0000" channel="Sky Sports 4">
+    <title lang="en">PGA Tour Golf</title>
+    <desc lang="en">Day four of the RSM Classic at the Sea Island Golf Club in Georgia. Robert Streb, Brendon de Jonge and Will MacKenzie contested a play-off for the title here last year(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Golf</category>
+    <icon src="http://tv.sky.com/logoWithBackground/73/skycha1322.png" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151122230000 +0000" channel="Sky Sports 4">
+    <title lang="en">European Tour Golf</title>
+    <desc lang="en">Day four of the DP World Tour Championship at the Jumeirah Golf Estates in Dubai. Andy Sullivan led by a shot overnight from Rory McIlroy, who is chasing a second title here. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Golf</category>
+    <icon src="http://tv.sky.com/logoWithBackground/73/skycha1322.png" />
+  </programme>
+  <programme start="20151122230000 +0000" stop="20151123000000 +0000" channel="Sky Sports 4">
+    <title lang="en">WWE Late Night Raw Hlts</title>
+    <desc lang="en">Another week of pulsating action on Raw with all your favourite WWE superstars. Matches include Roman Reigns v Cesaro and Alberto Del Rio v Kalisto. This programme contains flashing images. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Wrestling</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXjohncena1.jpg" />
+  </programme>
+  <programme start="20151122191500 +0000" stop="20151122194500 +0000" channel="Sky Sports 5">
+    <title lang="en">Sporting Rivalries: USSR v USA</title>
+    <desc lang="en">Series profiling some of the greatest sporting rivalries of all time. Here the focus is on the storied history between the USSR and American national basketball teams. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Basketball</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXsportrivalussrusa.jpg" />
+  </programme>
+  <programme start="20151122194500 +0000" stop="20151122200000 +0000" channel="Sky Sports 5">
+    <title lang="en">Sky Scholars: I am Sam Oldham</title>
+    <desc lang="en">A fascinating insight on gymnast and Sky Academy Sports Scholar Sam Oldham. The 22-year-old from Nottingham is hoping to qualify for the 2016 Olympic Games in Rio. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXiamsamoldham.jpg" />
+  </programme>
+  <programme start="20151122200000 +0000" stop="20151122220000 +0000" channel="Sky Sports 5">
+    <title lang="en">Eredivisie: Feyenoord v Twente</title>
+    <desc lang="en">Feyenoord meet FC Twente in the Dutch Eredivisie. Both of these sides have won the title in the past and Feyenoord, with Dirk Kuyt, will be confident of mounting a challenge this year. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXeredfeyefctw2.jpg" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151123000000 +0000" channel="Sky Sports 5">
+    <title lang="en">Eredivisie: Ajax v Cambuur</title>
+    <desc lang="en">Ajax meet Cambuur in the Dutch Eredivisie. Cambuur have never beaten the Amsterdam club. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXeredajaxscc.jpg" />
+  </programme>
+  <programme start="20151122212500 +0000" stop="20151122235500 +0000" channel="Sky Sports F1">
+    <title lang="en">F1 Classic Races: Japan 1998</title>
+    <desc lang="en">A look back at the 1998 Japanese Grand Prix at the Suzuka Circuit. Mika Hakkinen topped the Drivers' Championship going into this season-ending race. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Motor Sport</category>
+    <icon src="http://tv.sky.com/logoWithBackground/73/skycha1306.png" />
+  </programme>
+  <programme start="20151122235500 +0000" stop="20151123005500 +0000" channel="Sky Sports F1">
+    <title lang="en">Australian GP Highlights</title>
+    <desc lang="en">Highlights of the 2015 Australian Grand Prix from the Melbourne Grand Prix Circuit. Reigning world champion Lewis Hamilton secured pole position ahead of teammate Nico Rosberg. Also in HD(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Motor Sport</category>
+    <icon src="http://tv.sky.com/logoWithBackground/73/skycha1306.png" />
+  </programme>
+  <programme start="20151122182000 +0000" stop="20151122183000 +0000" channel="Eurosport">
+    <title lang="en">WATTS</title>
+    <desc lang="en">Eurosport's weekly round up of all the wacky, funny and crazy goings-on in the world of sport(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXwattslogogen.jpg" />
+  </programme>
+  <programme start="20151122183000 +0000" stop="20151122193000 +0000" channel="Eurosport">
+    <title lang="en">Cyclo-Cross World Cup</title>
+    <desc lang="en">Valkenburg hosts the second round of the UCI Cyclocross World Cup in Holland. Four of the last five champions of the competition have hailed from Belgium(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXcyclocrossgen.jpg" />
+  </programme>
+  <programme start="20151122193000 +0000" stop="20151122210000 +0000" channel="Eurosport">
+    <title lang="en">Cycling: Ghent Six-Day</title>
+    <desc lang="en">Action from the sixth and final day of Ghent Six-Day. Team Wiggins rider Chris Lawless and Etixx-Quick Step's Iljo Keisse feature in this year's line-up for the event(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXcycling2013paris5.jpg" />
+  </programme>
+  <programme start="20151122210000 +0000" stop="20151122220000 +0000" channel="Eurosport">
+    <title lang="en">Ski Jumping World Cup</title>
+    <desc lang="en">Klingenthal hosts the opening round of the men's individual competition. Reigning champion Severin Freund will be looking to get off to a good start in front of his home crowd(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Wintersports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXskijump3.jpg" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151122230000 +0000" channel="Eurosport">
+    <title lang="en">Figure Skating: Grand Prix</title>
+    <desc lang="en">Action from the Cup of Russia event, the fifth round of the ISU Grand Prix. Featuring coverage from the gala exhibitions(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Wintersports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXfigskating.jpg" />
+  </programme>
+  <programme start="20151122230000 +0000" stop="20151123000000 +0000" channel="Eurosport">
+    <title lang="en">Cycling: Ghent Six-Day</title>
+    <desc lang="en">Action from the sixth and final day of Ghent Six-Day. Team Wiggins rider Chris Lawless and Etixx-Quick Step's Iljo Keisse feature in this year's line-up for the event(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXcycling2013paris5.jpg" />
+  </programme>
+  <programme start="20151122191500 +0000" stop="20151122201500 +0000" channel="Eurosport 2">
+    <title lang="en">Motorsport: ROC Nations Cup</title>
+    <desc lang="en">The ROC Nations Cup sees the world's finest drivers compete for their countries. Jenson Button and Blancpain Endurance driver Alex Buncombe will be one team representing England(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Motor Sport</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXraceofchamp2015a.jpg" />
+  </programme>
+  <programme start="20151122201500 +0000" stop="20151122211500 +0000" channel="Eurosport 2">
+    <title lang="en">Motorsport: Formula E</title>
+    <desc lang="en">The second round of the inaugural Formula E season from Putrajaya, Malaysia(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Motor Sport</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXformulae2015.jpg" />
+  </programme>
+  <programme start="20151122211500 +0000" stop="20151122224500 +0000" channel="Eurosport 2">
+    <title lang="en">Live Weightlifting: World Champs</title>
+    <desc lang="en">The women's 53kg event at the 2015 World Weightlifting Championships in Houston, USA(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXliveweightlifting.jpg" />
+  </programme>
+  <programme start="20151122224500 +0000" stop="20151122233000 +0000" channel="Eurosport 2">
+    <title lang="en">Ski Jumping World Cup</title>
+    <desc lang="en">Klingenthal hosts the opening round of the men's individual competition. Reigning champion Severin Freund will be looking to get off to a good start in front of his home crowd(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Wintersports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXskijump3.jpg" />
+  </programme>
+  <programme start="20151122233000 +0000" stop="20151123011500 +0000" channel="Eurosport 2">
+    <title lang="en">Live Weightlifting: World Champs</title>
+    <desc lang="en">The men's 62kg event at the 2015 World Weightlifting Championships in Houston, USA(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXliveweightlifting.jpg" />
+  </programme>
+  <programme start="20151122183000 +0000" stop="20151122193000 +0000" channel="Eurosport HD">
+    <title lang="en">Cyclo-Cross World Cup</title>
+    <desc lang="en">Valkenburg hosts the second round of the UCI Cyclocross World Cup in Holland. Four of the last five champions of the competition have hailed from Belgium(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXcyclocrossgen.jpg" />
+  </programme>
+  <programme start="20151122193000 +0000" stop="20151122210000 +0000" channel="Eurosport HD">
+    <title lang="en">Cycling: Ghent Six-Day</title>
+    <desc lang="en">Action from the sixth and final day of Ghent Six-Day. Team Wiggins rider Chris Lawless and Etixx-Quick Step's Iljo Keisse feature in this year's line-up for the event(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXcycling2013paris5.jpg" />
+  </programme>
+  <programme start="20151122210000 +0000" stop="20151122220000 +0000" channel="Eurosport HD">
+    <title lang="en">Ski Jumping World Cup</title>
+    <desc lang="en">Klingenthal hosts the opening round of the men's individual competition. Reigning champion Severin Freund will be looking to get off to a good start in front of his home crowd(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Wintersports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXskijump3.jpg" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151122230000 +0000" channel="Eurosport HD">
+    <title lang="en">Figure Skating: Grand Prix</title>
+    <desc lang="en">Action from the Cup of Russia event, the fifth round of the ISU Grand Prix. Featuring coverage from the gala exhibitions(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Wintersports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXfigskating.jpg" />
+  </programme>
+  <programme start="20151122230000 +0000" stop="20151123000000 +0000" channel="Eurosport HD">
+    <title lang="en">Cycling: Ghent Six-Day</title>
+    <desc lang="en">Action from the sixth and final day of Ghent Six-Day. Team Wiggins rider Chris Lawless and Etixx-Quick Step's Iljo Keisse feature in this year's line-up for the event(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXcycling2013paris5.jpg" />
+  </programme>
+  <programme start="20151122183000 +0000" stop="20151122194500 +0000" channel="BT Sport 1">
+    <title lang="en">European Football Show Live</title>
+    <desc lang="en">James Richardson and guests review all of the weekend's action from across Europe and look ahead to tonight's matches. From 7pm press red for live Brasileirao(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXjamesrichardson1.jpg" />
+  </programme>
+  <programme start="20151122194500 +0000" stop="20151122220000 +0000" channel="BT Sport 1">
+    <title lang="en">Live Inter v Frosinone</title>
+    <desc lang="en">Action from Serie A as Inter host Frosinone at the San Siro. Roberto Mancini's Inter are unbeaten in six games and have lost just once this season. Press red for live Brasileirao(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXserieafootgen2.jpg" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151122223000 +0000" channel="BT Sport 1">
+    <title lang="en">Vanarama National League</title>
+    <desc lang="en">A round-up of this weekend's action. There were two intriguing clashes between promotion rivals as leaders Cheltenham hosted second-placed Forest Green and Eastleigh faced Grimsby(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXvanaramanatleaggen.jpg" />
+  </programme>
+  <programme start="20151122223000 +0000" stop="20151123000000 +0000" channel="BT Sport 1">
+    <title lang="en">Hamilton v Aberdeen</title>
+    <desc lang="en">Ladbrokes Premiership action at New Douglas Park. Hamilton look to bounce back from two successive defeats while Aberdeen go in search of just their second win since 20 September(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXhamiltonFootball1.jpg" />
+  </programme>
+  <programme start="20151122193000 +0000" stop="20151122203000 +0000" channel="BT Sport Europe">
+    <title lang="en">European Rugby Champions Cup</title>
+    <desc lang="en">Craig Doyle, Lawrence Dallaglio and Brian O'Driscoll present live highlights of this weekend's second round clashes, including Wasps v Toulon. From 8pm press red for live Ligue 1(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Rugby</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXchampionscuprugby.jpg" />
+  </programme>
+  <programme start="20151122203000 +0000" stop="20151122220000 +0000" channel="BT Sport Europe">
+    <title lang="en">Live Saint-Etienne v Marseille</title>
+    <desc lang="en">Ligue 1 action at the Stade Geoffroy-Guichard. The hosts have won seven and lost four of their last 11 Ligue 1 games - only PSG have picked up more points over the same period(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXMarseilleOcampos1.jpg" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151122233000 +0000" channel="BT Sport Europe">
+    <title lang="en">Caen v Angers</title>
+    <desc lang="en">Two of Ligue 1's surprise packages clash at the Stade Michel-d'Ornano in the first top flight meeting in more than two decades. The clubs last met in May 1994. No GFX L(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXCaenFeret.jpg" />
+  </programme>
+  <programme start="20151122233000 +0000" stop="20151123010000 +0000" channel="BT Sport Europe">
+    <title lang="en">Rennes v Bordeaux</title>
+    <desc lang="en">Ligue 1 action at Roazhon Park. Rennes claimed a first league win in eight games by beating Angers last time out, while Bordeaux came from a goal down to see off Monaco. No GFX L(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXRennesGrosicki.jpg" />
+  </programme>
+  <programme start="20151122200000 +0000" stop="20151122203000 +0000" channel="BT Sport 2">
+    <title lang="en">NBA Action</title>
+    <desc lang="en">Action is the watchword for this fast paced highlights programme, which rounds up the latest action from the NBA(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Basketball</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXnbaactiongen.jpg" />
+  </programme>
+  <programme start="20151122203000 +0000" stop="20151122230000 +0000" channel="BT Sport 2">
+    <title lang="en">Live Raptors @ Clippers</title>
+    <desc lang="en">NBA action as the Los Angeles Clippers host the Toronto Raptors at the Staples Center(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Basketball</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXnbaactiongen3.jpg" />
+  </programme>
+  <programme start="20151122230000 +0000" stop="20151123020000 +0000" channel="BT Sport 2">
+    <title lang="en">UFC: Magny v Gastelum</title>
+    <desc lang="en">UFC Fight Night action from Monterrey in Mexico, featuring the welterweight bout between Neil Magny and Kelvin Gastelum. The co-main event features Ricardo Lamas v Diego Sanchez(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">Extreme</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXufcgen.jpg" />
+  </programme>
+  <programme start="20151122210000 +0000" stop="20151122213000 +0000" channel="BT Sport\/\/ESPN">
+    <title lang="en">World Wide Sports</title>
+    <desc lang="en">Travelling the globe to delve into the magical world of sport with its drama, passion and dedication, we meet the individuals who strive to be the best(n)</desc>
+    <category lang="en">Sports</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXworldwidesportgen.jpg" />
+  </programme>
+  <programme start="20151122213000 +0000" stop="20151123003000 +0000" channel="BT Sport\/\/ESPN">
+    <title lang="en">Live Calgary @ Edmonton</title>
+    <desc lang="en">The Canadian Football League Western Final between the Edmonton Eskimosand the Calgary Stampeders at the Commonwealth Stadium in Alberta(n)</desc>
+    <category lang="en">Sports</category>
+    <category lang="en">American Football</category>
+    <icon src="http://epgstatic.sky.com/epgdata/1.0/paimage/18/0/webANXcflgen.jpg" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151123021500 +0000" channel="1HD">
+    <title lang="en">Real Madrid vs FC Barcelona - Spanish League 1 15/16</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122233000 +0000" stop="20151123022500 +0000" channel="2HD">
+    <title lang="en">Watford vs Manchester United - English Premier League 2015 - 2016</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122233000 +0000" stop="20151123012500 +0000" channel="3HD">
+    <title lang="en">Everton FC vs Aston Villa - English Premier League 2015 - 2016</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122223000 +0000" stop="20151123001500 +0000" channel="4HD">
+    <title lang="en">Eintracht Frankfurt vs Bayer 04 Leverkusen - German League 1st Division 2015 - 2016</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151123010000 +0000" channel="5HD">
+    <title lang="en">VfL Wolfsburg vs SV Werder Bremen - German League 1st Division 2015 - 2016</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122230000 +0000" stop="20151123020000 +0000" channel="6HD">
+    <title lang="en">Lorient vs Paris Saint-Germain - French League 1 2015 - 2016</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122230000 +0000" stop="20151123030000 +0000" channel="7HD">
+    <title lang="en">Guangzhou vs Ahli - Asian Champions League</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122210000 +0000" stop="20151123013000 +0000" channel="8HD">
+    <title lang="en">Weightlifting World Championships - Day1</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122230000 +0000" stop="20151123013000 +0000" channel="9HD">
+    <title lang="en">Orlando Pirates vs Etoile Sahel -CAF Confederation Cup</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122000000 +0000" stop="20151122003000 +0000" channel="11HD">
+    <title lang="en">FOOTBALL LATINO</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122003000 +0000" stop="20151122013000 +0000" channel="11HD">
+    <title lang="en">The Last Word - 2015</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122013000 +0000" stop="20151122020000 +0000" channel="11HD">
+    <title lang="en">FOOT BRAZIL</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122020000 +0000" stop="20151122023000 +0000" channel="11HD">
+    <title lang="en">NEWCASTLE vs LEICESTER - English Premier League Mini Match Arabic / English Commentary</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122023000 +0000" stop="20151122030000 +0000" channel="11HD">
+    <title lang="en">WATFORD vs MAN UTD - English Premier League Mini Match Arabic / English Commentary</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122030000 +0000" stop="20151122033000 +0000" channel="11HD">
+    <title lang="en">La Liga World</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122033000 +0000" stop="20151122040000 +0000" channel="11HD">
+    <title lang="en">WEST BROM vs ARSENAL - English Premier League Mini Match Arabic / English Commentary</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122040000 +0000" stop="20151122043000 +0000" channel="11HD">
+    <title lang="en">EPL Classic Matches - Manchester City 2-3 Liverpool 2008/09</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122043000 +0000" stop="20151122050000 +0000" channel="11HD">
+    <title lang="en">UCL Magazine Show</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122050000 +0000" stop="20151122060000 +0000" channel="11HD">
+    <title lang="en">The Last Word - 2015</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122060000 +0000" stop="20151122063000 +0000" channel="11HD">
+    <title lang="en">Total Italian Football</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122063000 +0000" stop="20151122070000 +0000" channel="11HD">
+    <title lang="en">CHELSEA vs NORWICH - English Premier League Mini Match Arabic / English Commentary</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122070000 +0000" stop="20151122073000 +0000" channel="11HD">
+    <title lang="en">MAN CITY vs LIVERPOOL - English Premier League Mini Match Arabic / English Commentary</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122073000 +0000" stop="20151122080000 +0000" channel="11HD">
+    <title lang="en">FOOT BRAZIL</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122080000 +0000" stop="20151122090000 +0000" channel="11HD">
+    <title lang="en">The Last Word - 2015</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122090000 +0000" stop="20151122093000 +0000" channel="11HD">
+    <title lang="en">EPL Classic Matches - Manchester City 2-3 Liverpool 2008/09</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122093000 +0000" stop="20151122100000 +0000" channel="11HD">
+    <title lang="en">NEWCASTLE vs LEICESTER - English Premier League Mini Match Arabic / English Commentary</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122100000 +0000" stop="20151122103000 +0000" channel="11HD">
+    <title lang="en">WATFORD vs MAN UTD - English Premier League Mini Match Arabic / English Commentary</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122103000 +0000" stop="20151122110000 +0000" channel="11HD">
+    <title lang="en">UCL Magazine Show</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122110000 +0000" stop="20151122120000 +0000" channel="11HD">
+    <title lang="en">EPL Saturday Review</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122120000 +0000" stop="20151122130000 +0000" channel="11HD">
+    <title lang="en">The Last Word - 2015</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122130000 +0000" stop="20151122153000 +0000" channel="11HD">
+    <title lang="en">Burnley vs Brighton - English Championship</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122153000 +0000" stop="20151122183000 +0000" channel="11HD">
+    <title lang="en">Tottenham Hotspur vs West Ham United - English Premier League 2015 - 2016</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122183000 +0000" stop="20151122220000 +0000" channel="11HD">
+    <title lang="en">Inter vs Frosinone - Italian League Week 13</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122220000 +0000" stop="20151122223000 +0000" channel="11HD">
+    <title lang="en">EPL World</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122223000 +0000" stop="20151122230000 +0000" channel="11HD">
+    <title lang="en">EPL Classic Matches - Manchester City 2-3 Liverpool 2008/09</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122230000 +0000" stop="20151122233000 +0000" channel="11HD">
+    <title lang="en">Real Madrid vs Barcelona Spanish La Liga Mini Match Arabic / English Commentary</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122233000 +0000" stop="20151123000000 +0000" channel="11HD">
+    <title lang="en">Bologna vs Roma Italian Serie A Mini Match Arabic / English Commentary</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122000000 +0000" stop="20151122023000 +0000" channel="12HD">
+    <title lang="en">Squash Mens World Championship - Semi Finals</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/squash.png" />
+  </programme>
+  <programme start="20151122023000 +0000" stop="20151122030000 +0000" channel="12HD">
+    <title lang="en">FIFA Football Weekly</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122030000 +0000" stop="20151122033000 +0000" channel="12HD">
+    <title lang="en">Cricket Greatest - Graham Gooch</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122033000 +0000" stop="20151122060000 +0000" channel="12HD">
+    <title lang="en">Bristol City vs Hull City - English Championship</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122060000 +0000" stop="20151122063000 +0000" channel="12HD">
+    <title lang="en">Omni sport</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122063000 +0000" stop="20151122070000 +0000" channel="12HD">
+    <title lang="en">Road to Rio 2015</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122070000 +0000" stop="20151122073000 +0000" channel="12HD">
+    <title lang="en">Great Sporting Moments - The Champions Comeback - Lightning Bolt</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122073000 +0000" stop="20151122091500 +0000" channel="12HD">
+    <title lang="en">Toulouse v Oyonnax - European Rugby Cup</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/rugby.png" />
+  </programme>
+  <programme start="20151122091500 +0000" stop="20151122110000 +0000" channel="12HD">
+    <title lang="en">Bristol City vs Hull City - English Championship</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122110000 +0000" stop="20151122113000 +0000" channel="12HD">
+    <title lang="en">Omni sport</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122113000 +0000" stop="20151122140000 +0000" channel="12HD">
+    <title lang="en">Squash Mens World Championship - Semi Finals</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/squash.png" />
+  </programme>
+  <programme start="20151122140000 +0000" stop="20151122160000 +0000" channel="12HD">
+    <title lang="en">Udinese vs Sampdoria - Italian League Week 13</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122160000 +0000" stop="20151122163000 +0000" channel="12HD">
+    <title lang="en">World Wide Sports</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122163000 +0000" stop="20151122170000 +0000" channel="12HD">
+    <title lang="en">This Is Ibrahimovic - PSG’s Record Goal Scorer</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122170000 +0000" stop="20151122173000 +0000" channel="12HD">
+    <title lang="en">Auto Speed</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122173000 +0000" stop="20151122180000 +0000" channel="12HD">
+    <title lang="en">Messi v Ronaldo – The Greatest</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122180000 +0000" stop="20151122200000 +0000" channel="12HD">
+    <title lang="en">ATP World Tours Final 2015</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/tennis.png" />
+  </programme>
+  <programme start="20151122200000 +0000" stop="20151122203000 +0000" channel="12HD">
+    <title lang="en">The Beautiful Game El Clasico Specials</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122203000 +0000" stop="20151122210000 +0000" channel="12HD">
+    <title lang="en">Who Is Zlatan</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122210000 +0000" stop="20151122230000 +0000" channel="12HD">
+    <title lang="en">Bristol City vs Hull City - English Championship</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+  <programme start="20151122230000 +0000" stop="20151123000000 +0000" channel="12HD">
+    <title lang="en">Golfing World</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122233000 +0000" stop="20151123050000 +0000" channel="15HD">
+    <title lang="en">Ca Se Passe Sur Bein</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/default.png" />
+  </programme>
+  <programme start="20151122233000 +0000" stop="20151123010000 +0000" channel="16HD">
+    <title lang="en">Paris St Germain vs Kiel</title>
+    <icon src="https://static.beinsports-social.com/img/show_types/football.png" />
+  </programme>
+</tv>
