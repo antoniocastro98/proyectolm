@@ -15,3 +15,7 @@ def buscar (datos, canal):
 def informacion (datos, programa):
     info=datos.xpath("/tv/programme[title='%s']//@channel"%programa)
     return info
+
+def libre (datos,idioma):
+    var2=datos.xpath("/tv/programme/tittle/text()//tittle[@lang='%s']"%idioma)
+    return var2

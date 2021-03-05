@@ -1,5 +1,5 @@
 from lxml import etree
-from Funciones import listar, contar, buscar, informacion
+from Funciones import listar, contar, buscar, informacion, libre
 datos=etree.parse("archivoxml.xml")
 
 
@@ -52,7 +52,7 @@ while opcion!=0:
             opcion=int(input("Introduce una opción: "))
     if opcion==4:
         lista4=[]
-        programa=input("Introduce el nombre del proigrama que quieres buscar(Pon un espacio al final del nombre): ")
+        programa=input("Introduce el nombre del programa que quieres buscar(Pon un espacio al final del nombre): ")
         for i in informacion(datos,programa):
             print(i)
             lista4.append(i)
@@ -63,7 +63,11 @@ while opcion!=0:
             print ("Error, introduce una opción correcta")
             opcion=int(input("Introduce una opción: "))
     if opcion==5:
-        
+        idioma=input("Introduce el idioma (es o en) que quieres buscar: ")
+       
+        for i in libre(datos,idioma):
+            print(i)
+      
         opcion=int(input("Introduce una opción: "))
         while opcion<0 or opcion>5:
             print ("Error, introduce una opción correcta")
