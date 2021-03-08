@@ -67,7 +67,6 @@ while opcion!=0:
        
         for i in libre(datos,idioma):
             print(i)
-      
         opcion=int(input("Introduce una opción: "))
         while opcion<0 or opcion>5:
             print ("Error, introduce una opción correcta")

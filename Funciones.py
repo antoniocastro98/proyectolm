@@ -17,5 +17,5 @@ def informacion (datos, programa):
     return info
 
 def libre (datos,idioma):
-    var2=datos.xpath("/tv/programme/tittle/text()//tittle[@lang='%s']"%idioma)
+    var2=datos.xpath("/tv/programme/title[@lang='%s']/text()"%idioma)
     return var2
